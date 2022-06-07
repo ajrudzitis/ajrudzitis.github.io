@@ -1,6 +1,5 @@
 ---
 title:  "The one where Aleks writes about nostalgia"
-layout: post
 ---
 
 The one where Aleks writes about nostalgia

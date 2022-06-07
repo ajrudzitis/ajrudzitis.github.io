@@ -1,3 +1,7 @@
+---
+title:  "Guitar Lessons"
+---
+
 Guitar Lessons
 ===
 
