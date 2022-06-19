@@ -2,7 +2,7 @@
 title:  "Letter Archive"
 ---
 
-Arhive of Past Letters
+Archive of Past Letters
 ==
 
 <table>

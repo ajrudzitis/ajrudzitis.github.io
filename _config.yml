@@ -19,12 +19,11 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Aleks Rudzitis's Home Page
-email: your-email@example.com
 description: >- # 
   The personal website for Aleks Rudzitis
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://rudzitis.org" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://aleksrudzitis.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ajrudzitis
 github_username:  ajrudzitis
 
