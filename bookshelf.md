@@ -13,5 +13,9 @@ The list is created partially from memory, so it is certainly not exhaustive. Ho
 Just like my real bookshelf, there is no particular order to this list.
 
 {% for book in site.data.bookshelf %}
+{% if book.isbn %}
+* [{{book.title}}](https://amazon.com/dp/{{book.isbn}}) by {{book.author}}
+{% else %}
 * {{book.title}} by {{book.author}}
+{% endif %}
 {% endfor %}
