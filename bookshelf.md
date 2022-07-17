@@ -13,9 +13,12 @@ The list is created partially from memory, so it is certainly not exhaustive. Ho
 Just like my real bookshelf, there is no particular order to this list.
 
 {% for book in site.data.bookshelf %}
-{% if book.isbn %}
-* [{{book.title}}](https://amazon.com/dp/{{book.isbn}}) by {{book.author}}
+* [{{book.title}}]({{book.url}}){% if book.author and book.author != "" %} by {{book.author}}{% endif %}
+{% endfor %}
+{% for book in site.data.misc_books %}
+{% if book.url %}
+* [{{book.title}}]({{book.url}}){% if book.author and book.author != ""  %} by {{book.author}}{% endif %}
 {% else %}
-* {{book.title}} by {{book.author}}
+* {{book.title}}{% if book.author and book.author != "" %} by {{book.author}}{% endif %}
 {% endif %}
 {% endfor %}
