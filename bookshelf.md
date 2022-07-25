@@ -22,3 +22,7 @@ Just like my real bookshelf, there is no particular order to this list.
 * {{book.title}}{% if book.author and book.author != "" %} by {{book.author}}{% endif %}
 {% endif %}
 {% endfor %}
+
+Data is sourced from [openlibrary.org](https://openlibrary.org) and may contain slight errors in the title or authors list. I've done my best to sanitize data as I've discovered issues. 
+
+[I manage this list using an tool I wrote. You can find it on Github](https://github.com/ajrudzitis/addlib). 
