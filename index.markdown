@@ -20,7 +20,7 @@ I'm trying out a new thing where rather than posting to Facebook, I send out
 periodic letters to my family and friends who are interested in what is going
 on with me and my family.
 
-[Sign up here.](https://tinyletter.com/aleksrudzitis/)
+[Sign up here.](https://buttondown.email/aleks)
 
 [Archive of Past Letters](letters/index.html)
 
