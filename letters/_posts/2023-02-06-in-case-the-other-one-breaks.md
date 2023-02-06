@@ -20,6 +20,7 @@ In other Amelia news, I took her skiing for the first time at Stevens Pass.
 We had to go mid-week because the place that I merely remember being expensive and crowded during the weekend growing up, now feels nearly impossible to get into to. 
 
 She took to it well and is excited to go again. 
+
 ![Amelia Ready To Ski!](https://cdn.aleksrudzitis.com/letters/2023-02-06/imgs/amelia-ready-to-ski.jpg)
 
 ---
