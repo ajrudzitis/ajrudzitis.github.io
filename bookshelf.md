@@ -12,8 +12,8 @@ The list is created partially from memory, so it is certainly not exhaustive. Ho
 
 Just like my real bookshelf, there is no particular order to this list.
 
-{% for book in site.data.bookshelf %}
-* [{{book.title}}]({{book.url}}){% if book.author and book.author != "" %} by {{book.author}}{% endif %}
+{% for book in site.data.librarything-bookshelf %}
+* [{{book[1].title}}](https://www.librarything.com/work/{{book[1].workcode}}/book/{{book[1].books_id}}){% if book[1].primaryauthor and book[1].primaryauthor != "" %} by {{book[1].primaryauthor}}{% endif %}
 {% endfor %}
 {% for book in site.data.misc_books %}
 {% if book.url %}
