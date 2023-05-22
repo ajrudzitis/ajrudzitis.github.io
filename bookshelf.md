@@ -23,4 +23,4 @@ Just like my real bookshelf, there is no particular order to this list.
 {% endif %}
 {% endfor %}
 
-[I manage this list using LibraryThing.](https://www.librarything.com/home). 
+[I manage this list using LibraryThing](https://www.librarything.com/home).
