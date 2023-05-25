@@ -19,10 +19,11 @@ Back when I joined Amazon, everyone was issued one of these.
  
 Since we didn’t have Zoom (or whatever), it wasn’t uncommon when you wanted to have a synchronous conversation with an engineer in a different location, that you would do this:
  
-Find their name on in internal website called the phone tool
-Find a 5 digit extension on their page
-Push physical buttons one at a time
-Pick up a physical handset and proceed to hold it against your ear like a cave person for the next 30 mins or whatever.
+- Find their name on in internal website called the phone tool
+- Find a 5 digit extension on their page
+- Push physical buttons one at a time
+- Pick up a physical handset and proceed to hold it against your ear like a cave person for the next 30 mins or whatever.
+
 Our phone system also supported voicemail, so sometimes you’d come back to your desk and there would be a flashing red light indicating you had a voicemail.
  
 To listen to it, you’d again have to push a series of buttons, enter your pin, and LISTEN TO THE MESSAGES ONE AT A TIME just like in medieval times.
