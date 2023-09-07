@@ -8,6 +8,11 @@ title: Home
 Hi! My name is Aleks Rudzitis. This is my minimalist website to go with
 the domain name that I primarily have for personal email. 
 
+# [Substack](https://www.bitsandbeing.com)
+
+Unless you're really interested in my personal life, I recommend taking yourself over to my substack: [Bits and Being](https://www.bitsandbeing.com)
+
+
 # Articles
 
 {% for post in site.categories.articles %}
@@ -29,7 +34,7 @@ on with me and my family.
 # Travel
 
 My wife and I maintain an (inactive for now) travel blog at 
-[SeeYouInTwoWeeks.com](https://www.seeyouintwoweeks.com)
+[SeeYouInTwoWeeks.com](https://seeyouintwoweeks.com)
 
 # Mindfulness and Meditation
 
@@ -41,7 +46,7 @@ related to meditation, mindfulness, and Buddhism
 
 * [LinkedIn](https://www.linkedin.com/in/aleksrudzitis/)
 * [GitHub](https://github.com/ajrudzitis)
-* [Medium](https://medium.com/@aleks.rudzitis)
+* [Substack](https://www.bitsandbeing.com/)
 
 # Other
 
