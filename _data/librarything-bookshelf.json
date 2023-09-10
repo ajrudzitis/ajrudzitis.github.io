@@ -87,7 +87,7 @@
     "code": ["303.48"],
     "wording": ["Causes of change",
     "Social Processes",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social change",
     "Social sciences"]
   },
@@ -820,7 +820,6 @@
     "25": ["satire"]
   },
   "series": ["Catch-22"],
-  "originaltitle": "Catch-22",
   "awards": ["Waterstones Books of the Century",
   "Time's All-Time 100 Novels selection",
   "BBC's Big Read",
@@ -861,7 +860,8 @@
   "The Great American Read",
   "1000 Books to Read Before You Die",
   "Greatest Books algorithm",
-  "Audie Award Finalist"],
+  "Audie Award Finalist",
+  "100 best novels written in English"],
   "genre": ["Fiction",
   "General Fiction",
   "Historical Fiction"],
@@ -1504,7 +1504,7 @@
     "Programming"]
   },
   "lcc": {
-    "code": "QA76.62"
+    "code": "QA76.62 .H35"
   },
   "source": "amazon.com books",
   "workcode": "23872222",
@@ -1614,8 +1614,8 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -1938,7 +1938,7 @@
     "code": ["302.14"],
     "wording": ["General topics of social interaction",
     "Social Interaction",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social participation",
     "Social sciences"]
   },
@@ -2490,7 +2490,7 @@
     "wording": ["Culture and Institutions",
     "Relations between the sexes, sexualities, love",
     "Sexual orientation, gender identity",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -4328,8 +4328,8 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -4421,8 +4421,8 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -4568,8 +4568,8 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -5200,8 +5200,8 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -5443,7 +5443,7 @@
     "code": ["302.14"],
     "wording": ["General topics of social interaction",
     "Social Interaction",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social participation",
     "Social sciences"]
   },
@@ -6319,8 +6319,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -6477,10 +6477,11 @@
   "A h\u00e1romtest-probl\u00e9ma"],
   "originaltitle": "\u4e09\u4f53",
   "awards": ["Nebula Nominee",
-  "Hugo",
+  "Hugo Nominee",
   "Locus Award Finalist",
   "John W. Campbell Memorial Award Finalist",
-  "Prometheus Award Shortlist"],
+  "Prometheus Award Shortlist",
+  "Hugo"],
   "genre": ["Fiction",
   "Science Fiction"],
   "genre_id": ["17160326",
@@ -6545,14 +6546,16 @@
   "originallanguage_codeA": ["eng",
   "jap"],
   "ddc": {
-    "code": ["895.6"],
-    "wording": ["Asian (east and south east) languages",
+    "code": ["895.635"],
+    "wording": ["1945\u20132000",
+    "Asian (east and south east) languages",
     "Japanese",
+    "Japanese fiction",
     "Literature",
     "Literature of other languages"]
   },
   "lcc": {
-    "code": "PL856.U673 A61213"
+    "code": "PL856.U673"
   },
   "series": ["1Q84"],
   "originaltitle": "1Q84",
@@ -6696,8 +6699,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -6834,7 +6837,6 @@
     "8": ["fiction in English"],
     "9": ["science fiction"]
   },
-  "originaltitle": "The Man in the High Castle",
   "awards": ["Hugo",
   "Larry McCaffery's 20th Century Greatest Hits",
   "Guardian 1000",
@@ -6908,8 +6910,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -6929,9 +6931,11 @@
   "His Dark Materials",
   "Trilogia Fronteiras do Universo"],
   "genre": ["Fiction",
-  "Fantasy"],
+  "Fantasy",
+  "Teen"],
   "genre_id": ["17160326",
-  "5280"],
+  "5280",
+  "631218"],
   "source": "amazon.com books",
   "workcode": "15575286",
   "entrydate": "2022-08-15",
@@ -7083,7 +7087,7 @@
     "10": ["World war, 1939-1945",
     "Germany"]
   },
-  "originaltitle": "End of a Berlin Diary",
+  "originaltitle": "The Rise and Fall of the Third Reich",
   "genre": ["Nonfiction",
   "General Nonfiction",
   "History"],
@@ -7255,12 +7259,12 @@
   "lcc": {
     "code": "PL2947.C59 D37"
   },
-  "series": ["A h\u00e1romtest-probl\u00e9ma",
-  "Drei Sonnen",
-  "El problema de los tres cuerpos",
+  "series": ["El problema de los tres cuerpos",
   "Le Probl\u00e8me \u00e0 trois corps",
   "Remembrance of Earth's Past",
-  "The Three-Body Problem"],
+  "The Three-Body Problem",
+  "Drei Sonnen",
+  "A h\u00e1romtest-probl\u00e9ma"],
   "originaltitle": "\u9ed1\u6697\u68ee\u6797",
   "genre": ["Fiction",
   "Science Fiction"],
@@ -7406,8 +7410,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -7525,8 +7529,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -7591,8 +7595,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -7657,8 +7661,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -7724,8 +7728,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -7799,12 +7803,12 @@
   "lcc": {
     "code": "PL2947.C59 D4313"
   },
-  "series": ["A h\u00e1romtest-probl\u00e9ma",
-  "Drei Sonnen",
-  "El problema de los tres cuerpos",
+  "series": ["El problema de los tres cuerpos",
   "Le Probl\u00e8me \u00e0 trois corps",
   "Remembrance of Earth's Past",
-  "The Three-Body Problem"],
+  "The Three-Body Problem",
+  "Drei Sonnen",
+  "A h\u00e1romtest-probl\u00e9ma"],
   "originaltitle": "\u6b7b\u795e\u6c38\u751f",
   "awards": ["Amazon.com Best Books",
   "The Observer book of the year",
@@ -7864,8 +7868,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -8231,8 +8235,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -8399,8 +8403,8 @@
   "ddc": {
     "code": ["823.92"],
     "wording": ["2000-",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
@@ -8549,10 +8553,10 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["828.9202"],
-    "wording": ["English miscellaneous writings",
+    "wording": ["English & Old English literatures",
+    "English miscellaneous writings",
     "English miscellaneous writings 1900-",
     "English miscellaneous writings 2000-",
-    "English {except North American}",
     "Literature"]
   },
   "lcc": {
@@ -8614,7 +8618,7 @@
     "Queer",
     "Relations between the sexes, sexualities, love",
     "Sexual orientation, gender identity",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -8691,24 +8695,7 @@
     "Fiction"],
     "15": ["science fiction"]
   },
-  "series": ["Alap\u00edtv\u00e1ny",
-  "De Foundation",
-  "Ciclo delle Fondazioni",
-  "Trilogia de les Fundacions",
-  "Serijal o Zakladi",
-  "Nadace",
-  "Z\u00e1klad\u0148a",
-  "Fundacja - publikacja",
-  "Fundacja - chronologiczny",
-  "Robot/Imperium/Fundacja - Story Order",
-  "Fundaci\u00f3n - Orden de Publicaci\u00f3n",
-  "Fundaci\u00f3n - Cronol\u00f3gico",
-  "Trilog\u00eda de la Fundaci\u00f3n",
-  "Fondation",
-  "Cycle de Fondation",
-  "Foundation",
-  "Die Foundation-Romane",
-  "Fundaci\u00f3n y Robots",
+  "series": ["Fundaci\u00f3n y Robots",
   "Robot/Imperium/Fundacja - Story Order",
   "Robot/Fundacja",
   "Foundation Expanded Universe",
@@ -8933,7 +8920,7 @@
     "Technology and Application of Knowledge"]
   },
   "lcc": {
-    "code": "TS173"
+    "code": "HD9696.U64 G6666"
   },
   "source": "amazon.com books",
   "workcode": "17619065",
@@ -9513,7 +9500,7 @@
     "Technology and Application of Knowledge"]
   },
   "lcc": {
-    "code": "RJ61 .Y66"
+    "code": "RJ61 Y6872"
   },
   "source": "amazon.com books",
   "workcode": "16907687",
@@ -9638,7 +9625,7 @@
     "Fatherhood",
     "Marriage and Parenting",
     "Parenting",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -9776,7 +9763,7 @@
     "code": ["304.8"],
     "wording": ["Factors affecting social behavior",
     "Movement of people",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -10516,7 +10503,7 @@
     "code": ["305.5"],
     "wording": ["Class",
     "Groups of people",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -10843,7 +10830,7 @@
     "Toilet Training"]
   },
   "lcc": {
-    "code": "HQ770.5 .B783 P68"
+    "code": "B8887"
   },
   "source": "amazon.com books",
   "workcode": "19573233",
@@ -10891,15 +10878,13 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["787.87"],
-    "wording": ["Guitar",
-    "Music",
-    "Plucked Lute Family",
+    "code": ["787"],
+    "wording": ["Music",
     "Stringed Instruments",
     "The arts"]
   },
   "lcc": {
-    "code": "MT582 .S492"
+    "code": "MT582.S492"
   },
   "series": ["The Complete Guitar Player"],
   "genre": ["Nonfiction",
@@ -11402,16 +11387,15 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
   "lcc": {
     "code": "PR6051.D3352"
   },
-  "series": ["Galakse-blafferen",
-  "Guida galattica per gli autostoppisti",
+  "series": ["Guida galattica per gli autostoppisti",
   "O Guia do Mochileiro das Gal\u00e1xias",
   "Galaxis utikalauz",
   "La Gu\u00eda del Autoestopista Gal\u00e1ctico",
@@ -11420,9 +11404,11 @@
   "Het transgalactisch liftershandboek",
   "Per Anhalter durch die Galaxis",
   "H2G2",
+  "Autostopem przez Galaktyk\u0119",
+  "Galakse-blafferen",
   "Stopa\u0159\u016fv pr\u016fvodce po Galaxii",
-  "The Hitchhiker's Guide to the Galaxy",
-  "Autostopem przez Galaktyk\u0119"],
+  "The Hitchhiker's Guide to the Galaxy"],
+  "originaltitle": "The Ultimate Hitchhiker's Guide to the Galaxy",
   "genre": ["Fiction",
   "Science Fiction"],
   "genre_id": ["17160326",
@@ -11478,7 +11464,7 @@
     "General",
     "Groups of people",
     "North America",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences",
     "United States"]
   },
@@ -11699,8 +11685,8 @@
     "27": ["United States",
     "Race relations"]
   },
-  "series": ["Maya Angelou's Autobiographies",
-  "Maya Angelou's Autobiografien"],
+  "series": ["Maya Angelou's Autobiografien",
+  "Maya Angelou's Autobiographies"],
   "originaltitle": "I Know Why the Caged Bird Sings",
   "awards": ["New York Times bestseller",
   "ALA Best Books for Young Adults",
@@ -12096,7 +12082,8 @@
   "Audie Award Finalist",
   "Audie Award Finalist",
   "66 B\u00fccher, von denen alle sagen, dass du sie gelesen haben musst",
-  "UC Berkeley Summer Reading List"],
+  "UC Berkeley Summer Reading List",
+  "100 best novels written in English"],
   "genre": ["Fiction",
   "General Fiction"],
   "genre_id": ["17160326",
@@ -12203,15 +12190,6 @@
   },
   "subject": [["Japan",
   "Guidebooks"]],
-  "series": ["Lonely Planet Country Guide",
-  "Lonely Planet Travel Guide",
-  "Lonely Planet Travel Guides"],
-  "genre": ["Nonfiction",
-  "General Nonfiction",
-  "Travel"],
-  "genre_id": ["20275895",
-  "1247",
-  "3578"],
   "source": "amazon.com books",
   "workcode": "24857",
   "entrydate": "2022-08-15",
@@ -12391,7 +12369,7 @@
     "Worship, meditation, yoga"]
   },
   "lcc": {
-    "code": "BQ9289 .Y36"
+    "code": "BQ9289.H843 Y34"
   },
   "source": "amazon.com books",
   "workcode": "548262",
@@ -12822,17 +12800,14 @@
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["629"],
-    "wording": ["Engineering and allied operations",
-    "Other Branches",
-    "Technology and Application of Knowledge"]
-  },
   "lcc": {
-    "code": "TL710"
+    "code": "TL711.T85 P75"
   },
+  "series": ["Federal Aviation Administration Handbooks and Manuals"],
+  "genre": ["No Genre"],
+  "genre_id": ["10037570"],
   "source": "amazon.com books",
-  "workcode": "8963430",
+  "workcode": "30730914",
   "entrydate": "2022-08-15",
   "format": [{
     "code": "1.1.1",
@@ -12949,12 +12924,10 @@
   "lcc": {
     "code": "TL558.U5 P74"
   },
-  "series": ["FAA Handbooks series"],
+  "series": ["Advisory Circulars"],
   "genre": ["Nonfiction",
-  "General Nonfiction",
   "Science & Nature"],
   "genre_id": ["20275895",
-  "1247",
   "1457"],
   "source": "amazon.com books",
   "workcode": "142633",
@@ -13006,7 +12979,9 @@
   "lcc": {
     "code": "TL710 .P48"
   },
-  "series": ["FAA Handbooks series"],
+  "series": ["Advisory Circulars",
+  "Federal Aviation Administration Handbooks and Manuals"],
+  "originaltitle": "Private Pilot's Handbook of Aeronautical Knowledge",
   "genre": ["Nonfiction"],
   "genre_id": ["20275895"],
   "source": "amazon.com books",
@@ -13190,10 +13165,11 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["629.132"],
+    "code": ["629.1325214"],
     "wording": ["Aviation",
     "Aviation engineering",
     "Engineering and allied operations",
+    "Flying and Accidents",
     "Main Principles of Flying",
     "Other Branches",
     "Technology and Application of Knowledge"]
@@ -13204,6 +13180,9 @@
   "subject": [["Instrument flying"],
   ["Instrument flying",
   "Handbooks manuals, etc"]],
+  "series": ["Federal Aviation Administration Handbooks and Manuals"],
+  "genre": ["Nonfiction"],
+  "genre_id": ["20275895"],
   "source": "amazon.com books",
   "workcode": "511923",
   "entrydate": "2022-08-15",
@@ -13352,7 +13331,7 @@
     "wording": ["Culture and Institutions",
     "Marriage",
     "Marriage and Parenting",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
   "lcc": {
@@ -14009,6 +13988,11 @@
   "lcc": {
     "code": "TL556 .U644"
   },
+  "series": ["Advisory Circulars"],
+  "genre": ["Nonfiction",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1457"],
   "source": "amazon.com books",
   "workcode": "1282914",
   "entrydate": "2022-08-15",
@@ -14170,8 +14154,8 @@
     "Fiction"],
     "22": ["historical fiction"]
   },
-  "series": ["The Baroque Cycle",
-  "Barock-Zyklus"],
+  "series": ["Barock-Zyklus",
+  "The Baroque Cycle"],
   "originaltitle": "The Confusion",
   "awards": ["New York Times bestseller",
   "Locus",
@@ -14546,35 +14530,11 @@
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
-  "ddc": {
-    "code": ["369.43"],
-    "wording": ["Boy and Cub Scouts",
-    "Boy and Girl Scouts",
-    "Other",
-    "Social problems and services; associations",
-    "Social sciences"]
-  },
   "lcc": {
     "code": "HS3313 .B69"
   },
-  "subject": {
-    "0": ["Boy Scouts"],
-    "2": ["Boy Scouts",
-    "United States",
-    "Handbooks, manuals, etc"],
-    "4": ["Boy Scouts of America",
-    "Handbooks, manuals, etc"],
-    "5": ["Boy Scouts. [from old catalog]"],
-    "6": ["Boy scouts"],
-    "7": ["Boy scouts. [from old catalog]"]
-  },
-  "awards": ["The Essential Man's Library: 100 Must-Read Books"],
-  "genre": ["Nonfiction",
-  "Sports and Leisure"],
-  "genre_id": ["20275895",
-  "34184"],
   "source": "amazon.com books",
-  "workcode": "203231",
+  "workcode": "30762707",
   "entrydate": "2022-08-15",
   "format": [{
     "code": "1.1.1",
@@ -14618,12 +14578,11 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["330.16"],
-    "wording": ["Economics",
+    "code": ["339.2"],
+    "wording": ["Distribution Of Income And Wealth",
     "Economics",
-    "Social sciences",
-    "Theory",
-    "Wealth; Inequality"]
+    "Macroeconomics and related topics",
+    "Social sciences"]
   },
   "lcc": [],
   "source": "amazon.com books",
@@ -14810,8 +14769,8 @@
     "20": ["Suspense fiction"],
     "21": ["historical fiction"]
   },
-  "series": ["The Baroque Cycle",
-  "Barock-Zyklus"],
+  "series": ["Barock-Zyklus",
+  "The Baroque Cycle"],
   "originaltitle": "The System of the World",
   "awards": ["SF Site Editor's Choice",
   "Prometheus Award",
@@ -14882,7 +14841,7 @@
     "Programming -- Subdivisions"]
   },
   "lcc": {
-    "code": "HF5548.O64"
+    "code": "HF5548.O64 E34"
   },
   "source": "amazon.com books",
   "workcode": "25093316",
@@ -15195,7 +15154,7 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "lcc": {
-    "code": "T20"
+    "code": "T14.5 .H35"
   },
   "source": "amazon.com books",
   "workcode": "27152163",
@@ -15249,10 +15208,12 @@
   "ddc": {
     "code": ["307"],
     "wording": ["Communities",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social sciences"]
   },
-  "lcc": [],
+  "lcc": {
+    "code": "HM1261 .R53"
+  },
   "source": "amazon.com books",
   "workcode": "23616468",
   "entrydate": "2022-08-15",
@@ -15297,7 +15258,7 @@
     "code": ["303.48"],
     "wording": ["Causes of change",
     "Social Processes",
-    "Social Sciences",
+    "Social Sciences; Sociology and anthropology",
     "Social change",
     "Social sciences"]
   },
@@ -15350,18 +15311,16 @@
     "Natural sciences and mathematics"]
   },
   "lcc": {
-    "code": "Q173 .M966"
+    "code": "Q173"
   },
   "series": ["What if?"],
   "awards": ["Goodreads Choice Award Nominee"],
   "genre": ["Nonfiction",
   "General Nonfiction",
-  "Science & Nature",
-  "Recent Nonfiction"],
+  "Science & Nature"],
   "genre_id": ["20275895",
   "1247",
-  "1457",
-  "8278606"],
+  "1457"],
   "source": "amazon.com books",
   "workcode": "28991133",
   "entrydate": "2022-09-30",
@@ -15466,13 +15425,13 @@
     "code": ["823.914"],
     "wording": ["1901-1999",
     "1945-1999",
+    "English & Old English literatures",
     "English fiction",
-    "English {except North American}",
     "Literature",
     "Modern Period"]
   },
   "lcc": {
-    "code": "PR6068.U757 S27"
+    "code": "PR6068.U757"
   },
   "subject": {
     "0": ["Didactic fiction"],
@@ -15488,7 +15447,6 @@
     "11": ["Survival after airplane accidents, shipwrecks, etc.",
     "Fiction"]
   },
-  "originaltitle": "The Satanic Verses",
   "awards": ["Whitbread",
   "Booker Prize Shortlist",
   "The Modern Library's 100 Best Novels: The Reader's List",
@@ -15543,10 +15501,10 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["828.9202"],
-    "wording": ["English miscellaneous writings",
+    "wording": ["English & Old English literatures",
+    "English miscellaneous writings",
     "English miscellaneous writings 1900-",
     "English miscellaneous writings 2000-",
-    "English {except North American}",
     "Literature"]
   },
   "lcc": [],
@@ -15588,12 +15546,10 @@
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
   "ddc": {
-    "code": ["355.0217092"],
+    "code": ["355.02"],
     "wording": ["Military Science",
-    "Nuclear War",
     "Public Administration, Military Science",
     "Social sciences",
-    "Topics",
     "War"]
   },
   "lcc": {
@@ -15863,8 +15819,16 @@
   "language_codeA": ["eng"],
   "originallanguage": ["English"],
   "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["621.39023"],
+    "wording": ["Applied physics",
+    "Computer engineering",
+    "Electrical, magnetic, optical, communications, computer engineering; electronics, lighting",
+    "Engineering and allied operations",
+    "Technology and Application of Knowledge"]
+  },
   "lcc": {
-    "code": "HD8039.D37"
+    "code": "TK7885.4 .R45"
   },
   "source": "amazon.com books",
   "workcode": "28042662",
@@ -15955,12 +15919,12 @@
   "originallanguage_codeA": ["eng"],
   "ddc": {
     "code": ["821.914"],
-    "wording": ["1945-1999",
-    "20th Century",
+    "wording": ["1900-",
+    "1900-1999",
+    "1945-1999",
+    "English & Old English literatures",
     "English poetry",
-    "English {except North American}",
-    "Literature",
-    "Modern period 1900-"]
+    "Literature"]
   },
   "lcc": {
     "code": "PR6023.A66 A17"
@@ -16028,7 +15992,7 @@
     "Literature"]
   },
   "lcc": {
-    "code": "PS3625.U545 C53"
+    "code": "PS3625.U545"
   },
   "source": "amazon.com books",
   "workcode": "26425290",
@@ -16241,7 +16205,7 @@
     "Social sciences"]
   },
   "lcc": {
-    "code": "HG4026 .V38"
+    "code": "HG4026"
   },
   "source": "amazon.com books",
   "workcode": "15408256",
@@ -16258,4 +16222,654 @@
   "dimensions": "8.125 x 5.375 x 1.125 inches",
   "weight": "0.65 pounds",
   "pages": "368 "
+},
+"241893737": {
+  "books_id": "241893737",
+  "title": "Siblings Without Rivalry: How to Help Your Children Live Together So You Can Live Too",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Mazlish, John W. Gardner Adele Faber Elaine",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Mazlish, John W. Gardner Adele Faber Elaine",
+    "fl": "John W. Gardner Adele Faber Elaine Mazlish",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0393063380",
+  "isbn": {
+    "0": "0393063380",
+    "2": "9780393063387"
+  },
+  "asin": "B0079UFJG4",
+  "ean": ["0393063380"],
+  "publication": "W W Norton & Co Inc (2012), Edition: Revised",
+  "date": "2012",
+  "summary": "Siblings Without Rivalry: How to Help Your Children Live Together So You Can Live Too by John W. Gardner Adele Faber Elaine Mazlish (2012)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["649.143"],
+    "wording": ["Home and family management",
+    "Parenting",
+    "Parenting siblings.",
+    "Parenting, Caregiving",
+    "Technology and Application of Knowledge"]
+  },
+  "lcc": {
+    "code": "HQ769 .F212"
+  },
+  "subject": {
+    "0": ["Brothers and sisters"],
+    "2": ["Child Rearing"],
+    "4": ["Child rearing"],
+    "6": ["Sibling rivalry"],
+    "8": ["child rearing"]
+  },
+  "originaltitle": "Siblings without rivalry",
+  "awards": ["New York Times bestseller"],
+  "genre": ["Nonfiction",
+  "General Nonfiction"],
+  "genre_id": ["20275895",
+  "1247"],
+  "source": "amazon.com books",
+  "workcode": "91360",
+  "entrydate": "2023-06-09",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "8.75 x 0.91 inches",
+  "height": "0.90944881797 inches",
+  "thickness": "5.64173227771 inches",
+  "length": "8.75196849501 inches",
+  "dimensions": "0.90944881797 x 8.75196849501 x 5.64173227771 inches"
+},
+"242636804": {
+  "books_id": "242636804",
+  "title": "Foundation and Empire",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Asimov, Isaac",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Asimov, Isaac",
+    "fl": "Isaac Asimov",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B000FC1PWK",
+  "publication": "Spectra (2004), 320 pages",
+  "date": "2004",
+  "summary": "Foundation and Empire by Isaac Asimov (2004)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["813.54"],
+    "wording": ["1945-1999",
+    "20th Century",
+    "American fiction",
+    "English (North America)",
+    "Literature"]
+  },
+  "lcc": {
+    "code": "PZ3.A8316 F PS3551"
+  },
+  "subject": {
+    "0": ["Epic literature"],
+    "2": ["Large Type Books"],
+    "3": ["Large type books"],
+    "5": ["Life on other planets",
+    "Fiction"],
+    "7": ["Psychohistory",
+    "Fiction"],
+    "9": ["Science Fiction"],
+    "11": ["Science fiction"],
+    "13": ["Seldon, Hari (Fictitious character)",
+    "Fiction"],
+    "15": ["science fiction"]
+  },
+  "series": ["Fundaci\u00f3n y Robots",
+  "Robot/Imperium/Fundacja - Story Order",
+  "Robot/Fundacja",
+  "Foundation Expanded Universe",
+  "Robot/Foundation",
+  "Robot/Empire/Foundation - Chronological",
+  "FOUNDATION",
+  "Der Foundation-Zyklus"],
+  "awards": ["1001 b\u00f6cker du m\u00e5ste l\u00e4sa innan du d\u00f6r",
+  "1000 Books to Read Before You Die"],
+  "genre": ["Fiction",
+  "Science Fiction"],
+  "genre_id": ["17160326",
+  "281"],
+  "source": "amazon.com books",
+  "workcode": "2992484",
+  "entrydate": "2023-06-21",
+  "format": [{
+    "code": "1.3",
+    "text": "Ebook"
+  }],
+  "copies": "1"
+},
+"242997887": {
+  "books_id": "242997887",
+  "title": "2010: Odyssey Two (Space Odyssey Series)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Clarke, Arthur C.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Clarke, Arthur C.",
+    "fl": "Arthur C. Clarke",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B07XG1S8LM",
+  "publication": "RosettaBooks (2019), 322 pages",
+  "date": "2012",
+  "summary": "2010: Odyssey Two (Space Odyssey Series) by Arthur C. Clarke (2012)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["823.914"],
+    "wording": ["1901-1999",
+    "1945-1999",
+    "English & Old English literatures",
+    "English fiction",
+    "Literature",
+    "Modern Period"]
+  },
+  "lcc": {
+    "code": "PR6005.L36 A616"
+  },
+  "subject": {
+    "0": ["Science Fiction"],
+    "2": ["Science fiction"],
+    "4": ["science fiction"]
+  },
+  "series": ["Odissea nello spazio",
+  "Odyssee Reihe",
+  "L'odyss\u00e9e de l'espace",
+  "The Odyssey Sequence"],
+  "originaltitle": "2010: Odyssey Two",
+  "awards": ["Hugo Nominee",
+  "New York Times bestseller",
+  "Eugene M. Emme Astronautical Literature Award"],
+  "genre": ["Fiction",
+  "Science Fiction"],
+  "genre_id": ["17160326",
+  "281"],
+  "source": "amazon.com books",
+  "workcode": "7132",
+  "entrydate": "2023-06-25",
+  "format": [{
+    "code": "1.3",
+    "text": "Ebook"
+  }],
+  "copies": "1"
+},
+"242997909": {
+  "books_id": "242997909",
+  "title": "Solutions and Other Problems",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Brosh, Allie",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Brosh, Allie",
+    "fl": "Allie Brosh",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1982156945",
+  "isbn": {
+    "0": "1982156945",
+    "2": "9781982156947"
+  },
+  "asin": "1982156945",
+  "ean": ["1982156945"],
+  "publication": "Gallery Books (2020), Edition: Illustrated, 528 pages",
+  "date": "2020",
+  "summary": "Solutions and Other Problems by Allie Brosh (2020)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["741.56"],
+    "wording": ["Cartoons, Caricatures, Comic Strips",
+    "Cartoons, Caricatures, Comics",
+    "Drawing &  drawings",
+    "Graphic arts and decorative arts",
+    "The arts"]
+  },
+  "lcc": {
+    "code": "PN6727.B7568 S65"
+  },
+  "awards": ["Goodreads Choice Award Nominee",
+  "Alex Award"],
+  "genre": ["Comics"],
+  "genre_id": ["4778"],
+  "source": "amazon.com books",
+  "workcode": "16688064",
+  "entrydate": "2023-06-25",
+  "format": [{
+    "code": "1.1.2",
+    "text": "Hardcover"
+  }],
+  "copies": "1",
+  "physical_description": "528 p.; 9 inches",
+  "height": "9 inches",
+  "thickness": "1.4 inches",
+  "length": "6 inches",
+  "dimensions": "9 x 6 x 1.4 inches",
+  "weight": "2.75 pounds",
+  "pages": "528 "
+},
+"242998123": {
+  "books_id": "242998123",
+  "title": "The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win",
+  "sortcharacter": "5",
+  "public": "true",
+  "primaryauthor": "Kim, Gene",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Kim, Gene",
+    "fl": "Gene Kim",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "1942788290",
+  "isbn": {
+    "0": "1942788290",
+    "2": "9781942788294"
+  },
+  "asin": "1942788290",
+  "ean": ["1942788290"],
+  "publication": "IT Revolution Press (2018), Edition: 5th Anniversary, 432 pages",
+  "date": "2018",
+  "summary": "The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win by Gene Kim (2018)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["813.6"],
+    "wording": ["21st Century",
+    "American fiction",
+    "English (North America)",
+    "Literature"]
+  },
+  "lcc": {
+    "code": "PS3611.I4538 P47"
+  },
+  "originaltitle": "The Phoenix Project: A Novel About IT, Devops, and Helping Your Business Win",
+  "genre": ["No Genre"],
+  "genre_id": ["10037570"],
+  "source": "amazon.com books",
+  "workcode": "13405936",
+  "entrydate": "2023-06-25",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "432 p.; 8.99 inches",
+  "height": "8.99 inches",
+  "thickness": "1.17 inches",
+  "length": "6.05 inches",
+  "dimensions": "8.99 x 6.05 x 1.17 inches",
+  "weight": "1.04058187664 pounds",
+  "pages": "432 "
+},
+"243482608": {
+  "books_id": "243482608",
+  "title": "Second Foundation",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Asimov, Isaac",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Asimov, Isaac",
+    "fl": "Isaac Asimov",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B003IF384Y",
+  "publication": "Random House Audio (2010)",
+  "date": "2010",
+  "summary": "Second Foundation by Isaac Asimov (2010)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["813.54"],
+    "wording": ["1945-1999",
+    "20th Century",
+    "American fiction",
+    "English (North America)",
+    "Literature"]
+  },
+  "lcc": {
+    "code": "PZ3.A8316 S PS3551"
+  },
+  "subject": {
+    "0": ["Large Type Books"],
+    "1": ["Large type books"],
+    "3": ["Life on other planets",
+    "Fiction"],
+    "5": ["Psychohistory",
+    "Fiction"],
+    "7": ["Psychological fiction"],
+    "9": ["Science Fiction"],
+    "11": ["Science fiction"],
+    "13": ["Seldon, Hari (Fictitious character)",
+    "Fiction"],
+    "15": ["science fiction"]
+  },
+  "series": ["Fundaci\u00f3n y Robots",
+  "Robot/Imperium/Fundacja - Story Order",
+  "Robot/Fundacja",
+  "Foundation Expanded Universe",
+  "Robot/Foundation",
+  "Robot/Empire/Foundation - Chronological",
+  "FOUNDATION",
+  "Der Foundation-Zyklus"],
+  "originaltitle": "Foundation's Edge",
+  "awards": ["1000 Books to Read Before You Die"],
+  "genre": ["Fiction",
+  "Science Fiction"],
+  "genre_id": ["17160326",
+  "281"],
+  "source": "amazon.com books",
+  "workcode": "3396",
+  "entrydate": "2023-07-02",
+  "format": [{
+    "code": "1.2.1",
+    "text": "Digital audiobook"
+  }],
+  "copies": "1"
+},
+"245029178": {
+  "books_id": "245029178",
+  "title": "2061: Odyssey Three (Space Odyssey Series)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Clarke, Arthur C.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Clarke, Arthur C.",
+    "fl": "Arthur C. Clarke",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B07XF9ZZWG",
+  "publication": "RosettaBooks (2019), 308 pages",
+  "date": "2012",
+  "summary": "2061: Odyssey Three (Space Odyssey Series) by Arthur C. Clarke (2012)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["823.914"],
+    "wording": ["1901-1999",
+    "1945-1999",
+    "English & Old English literatures",
+    "English fiction",
+    "Literature",
+    "Modern Period"]
+  },
+  "lcc": {
+    "code": "PR6005.L36 A617"
+  },
+  "subject": {
+    "0": ["Interplanetary voyages"],
+    "1": ["Science Fiction"],
+    "3": ["Science fiction"],
+    "5": ["science fiction"]
+  },
+  "series": ["Odissea nello spazio",
+  "Odyssee Reihe",
+  "L'odyss\u00e9e de l'espace",
+  "The Odyssey Sequence"],
+  "awards": ["New York Times bestseller"],
+  "genre": ["Fiction",
+  "Science Fiction"],
+  "genre_id": ["17160326",
+  "281"],
+  "source": "amazon.com books",
+  "workcode": "18486",
+  "entrydate": "2023-07-26",
+  "format": [{
+    "code": "1.3",
+    "text": "Ebook"
+  }],
+  "copies": "1"
+},
+"245586625": {
+  "books_id": "245586625",
+  "title": "3001: The Final Odyssey (Space Odyssey Series)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Clarke, Arthur C.",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Clarke, Arthur C.",
+    "fl": "Arthur C. Clarke",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "asin": "B07X8ZR72R",
+  "publication": "RosettaBooks (2019), 292 pages",
+  "date": "2012",
+  "summary": "3001: The Final Odyssey (Space Odyssey Series) by Arthur C. Clarke (2012)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["823.914"],
+    "wording": ["1901-1999",
+    "1945-1999",
+    "English & Old English literatures",
+    "English fiction",
+    "Literature",
+    "Modern Period"]
+  },
+  "lcc": {
+    "code": "PR6005.L36 A618"
+  },
+  "subject": {
+    "0": ["Science Fiction"],
+    "2": ["Science fiction"],
+    "4": ["Thirty-first century",
+    "Fiction"],
+    "5": ["science fiction"]
+  },
+  "series": ["Odissea nello spazio",
+  "Odyssee Reihe",
+  "L'odyss\u00e9e de l'espace",
+  "The Odyssey Sequence"],
+  "originaltitle": "3001: The Final Odyssey",
+  "awards": ["New York Times bestseller"],
+  "genre": ["Fiction",
+  "Science Fiction"],
+  "genre_id": ["17160326",
+  "281"],
+  "source": "amazon.com books",
+  "workcode": "17610",
+  "entrydate": "2023-08-02",
+  "format": [{
+    "code": "1.3",
+    "text": "Ebook"
+  }],
+  "copies": "1"
+},
+"247886367": {
+  "books_id": "247886367",
+  "title": "American Prometheus: The Inspiration for the Major Motion Picture OPPENHEIMER",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Bird, Kai",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Bird, Kai",
+    "fl": "Kai Bird",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0375726268",
+  "isbn": {
+    "0": "0375726268",
+    "2": "9780375726262"
+  },
+  "asin": "0375726268",
+  "ean": ["0375726268"],
+  "publication": "Vintage Books (2006), Edition: Reprint, 721 pages",
+  "date": "2006",
+  "summary": "American Prometheus: The Inspiration for the Major Motion Picture OPPENHEIMER by Kai Bird (2006)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["530.092"],
+    "wording": ["Biography",
+    "Biography And History",
+    "Natural sciences and mathematics",
+    "Physics",
+    "Physics",
+    "Physics"]
+  },
+  "lcc": {
+    "code": "QC16.O62 B57"
+  },
+  "subject": {
+    "0": ["Atomic bomb",
+    "United States",
+    "History"],
+    "2": ["Oppenheimer, J. Robert, 1904-1967"],
+    "3": ["Physicists",
+    "United States",
+    "Biography"],
+    "5": ["Science",
+    "Political aspects",
+    "United States",
+    "History",
+    "20th century"],
+    "6": ["Science",
+    "United States",
+    "History"],
+    "7": ["United States",
+    "History",
+    "20th century"]
+  },
+  "originaltitle": "American Prometheus: the Triumph and Tragedy of J. Robert Oppenheimer",
+  "awards": ["Pulitzer Prize",
+  "National Book Critics Circle Award",
+  "Time Magazine's Best Books of the Year",
+  "Ambassador Book Award",
+  "Newsweek 50 Books for Our Times",
+  "Duff Cooper Prize",
+  "J. Anthony Lukas Book Prize Finalist",
+  "1000 Books to Read Before You Die",
+  "1,000 Books to Read Before You Die Page-A-Day Calendar 2021"],
+  "genre": ["Nonfiction",
+  "Biography & Memoir",
+  "General Nonfiction",
+  "History",
+  "Science & Nature"],
+  "genre_id": ["20275895",
+  "1240",
+  "1247",
+  "1599",
+  "1457"],
+  "source": "amazon.com books",
+  "workcode": "125813",
+  "entrydate": "2023-08-29",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "721 p.; 7.95 inches",
+  "height": "7.95 inches",
+  "thickness": "1.61 inches",
+  "length": "5.14 inches",
+  "dimensions": "7.95 x 5.14 x 1.61 inches",
+  "weight": "1.34922904344 pounds",
+  "pages": "721 "
+},
+"247886380": {
+  "books_id": "247886380",
+  "title": "Rosewater (The Wormwood Trilogy, 1)",
+  "sortcharacter": "1",
+  "public": "true",
+  "primaryauthor": "Thompson, Tade",
+  "primaryauthorrole": "Author",
+  "authors": [{
+    "lf": "Thompson, Tade",
+    "fl": "Tade Thompson",
+    "role": "Author"
+  }],
+  "collections_idA": [1],
+  "collections": ["Your library"],
+  "originalisbn": "0275947815",
+  "isbn": {
+    "0": "0275947815",
+    "2": "9780275947811"
+  },
+  "asin": "0316449059",
+  "ean": ["0316449059"],
+  "publication": "Orbit (2018), Edition: Reissue, 432 pages",
+  "date": "2018",
+  "summary": "Rosewater (The Wormwood Trilogy, 1) by Tade Thompson (2018)",
+  "language": ["English"],
+  "language_codeA": ["eng"],
+  "originallanguage": ["English"],
+  "originallanguage_codeA": ["eng"],
+  "ddc": {
+    "code": ["350.74"],
+    "wording": ["Administration",
+    "Public Administration, Military Science",
+    "Social sciences",
+    "Study And Teaching"]
+  },
+  "lcc": {
+    "code": "HV7935.S69"
+  },
+  "source": "amazon.com books",
+  "workcode": "716207",
+  "entrydate": "2023-08-29",
+  "format": [{
+    "code": "1.1.1",
+    "text": "Paperback"
+  }],
+  "copies": "1",
+  "physical_description": "432 p.; 8.25 inches",
+  "height": "8.25 inches",
+  "thickness": "1.25 inches",
+  "length": "5.5 inches",
+  "dimensions": "8.25 x 5.5 x 1.25 inches",
+  "weight": "0.8 pounds",
+  "pages": "432 "
 }}
