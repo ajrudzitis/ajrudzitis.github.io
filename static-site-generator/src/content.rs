@@ -36,7 +36,7 @@ impl Content {
 
         let is_html = path.extension().map_or(false, |ext| ext == "html");
 
-        let (frontmatter, body) = parse_frontmatter(&content)?;
+        let (frontmatter, body) = parse_frontmatter(&content, is_html)?;
 
         // For HTML files, use content as-is; for markdown, convert to HTML
         let html = if is_html {
@@ -64,7 +64,7 @@ impl Content {
     }
 }
 
-fn parse_frontmatter(content: &str) -> Result<(Frontmatter, String)> {
+fn parse_frontmatter(content: &str, is_html: bool) -> Result<(Frontmatter, String)> {
     let re = Regex::new(r"(?s)^---\s*\n(.*?)\n---\s*\n(.*)$").unwrap();
 
     if let Some(caps) = re.captures(content) {
@@ -76,10 +76,16 @@ fn parse_frontmatter(content: &str) -> Result<(Frontmatter, String)> {
 
         Ok((frontmatter, body))
     } else {
-        // No frontmatter, use defaults
+        // No frontmatter, try to extract title from HTML <title> tag if it's an HTML file
+        let title = if is_html {
+            extract_html_title(content).unwrap_or_else(|| "Untitled".to_string())
+        } else {
+            "Untitled".to_string()
+        };
+
         Ok((
             Frontmatter {
-                title: "Untitled".to_string(),
+                title,
                 layout: None,
                 date: None,
                 extra: HashMap::new(),
@@ -87,6 +93,11 @@ fn parse_frontmatter(content: &str) -> Result<(Frontmatter, String)> {
             content.to_string(),
         ))
     }
+}
+
+fn extract_html_title(html: &str) -> Option<String> {
+    let title_re = Regex::new(r"(?i)<title>([^<]+)</title>").unwrap();
+    title_re.captures(html).map(|caps| caps[1].trim().to_string())
 }
 
 fn markdown_to_html(markdown: &str) -> String {
