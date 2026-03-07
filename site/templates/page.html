@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.frontmatter.title }} - {{ site.title }}{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>{{ page.frontmatter.title }}</h1>
+    <div class="content">
+        {{ page.html | safe }}
+    </div>
+</article>
+{% endblock %}

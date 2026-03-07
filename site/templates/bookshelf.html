@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.frontmatter.title }} - {{ site.title }}{% endblock %}
+
+{% block content %}
+<article class="page">
+    <h1>Bookshelf</h1>
+    <div class="content">
+        <p>These are a bunch of books on my real, virtual, or mental bookshelf. These are all books that I've read, or have in my queue to read shortly.</p>
+        <p>The list is created partially from memory, so it is certainly not exhaustive. However, it represents <em>most</em> of my adult liteary life.</p>
+        <p>Just like my real bookshelf, there is no particular order to this list.</p>
+
+        <ul>
+        {% if data["librarything-bookshelf"] %}
+        {% for book_id, book in data["librarything-bookshelf"] %}
+            <li>
+                <a href="https://www.librarything.com/work/{{ book.workcode }}/book/{{ book.books_id }}">{{ book.title }}</a>
+                {% if book.primaryauthor and book.primaryauthor != "" %} by {{ book.primaryauthor }}{% endif %}
+            </li>
+        {% endfor %}
+        {% endif %}
+
+        {% if data.misc_books %}
+        {% for book in data.misc_books %}
+            <li>
+                {% if book.url %}
+                <a href="{{ book.url }}">{{ book.title }}</a>
+                {% else %}
+                {{ book.title }}
+                {% endif %}
+                {% if book.author and book.author != ""  %} by {{ book.author }}{% endif %}
+            </li>
+        {% endfor %}
+        {% endif %}
+        </ul>
+
+        <p><a href="https://www.librarything.com/home">I manage this list using LibraryThing</a>.</p>
+    </div>
+</article>
+{% endblock %}

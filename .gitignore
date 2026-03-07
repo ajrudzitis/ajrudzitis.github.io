@@ -1,5 +1,29 @@
-_site
-.sass-cache
-.jekyll-cache
+# Site output
+public/
+_site/
+
+# Rust/Cargo
+static-site-generator/target/
+# Note: Cargo.lock should be committed for applications (not ignored)
+
+# Ruby/Jekyll (legacy, can remove after full migration)
+.bundle/
+vendor/
+.jekyll-cache/
+.sass-cache/
 .jekyll-metadata
-vendor
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local

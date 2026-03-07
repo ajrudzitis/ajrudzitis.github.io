@@ -1,0 +1,13 @@
+title = "Aleks Rudzitis's Home Page"
+description = "The personal website for Aleks Rudzitis"
+base_url = "https://aleksrudzitis.com"
+author = "Aleks Rudzitis"
+
+[social]
+twitter = "ajrudzitis"
+github = "ajrudzitis"
+linkedin = "aleksrudzitis"
+
+[permalinks]
+letters = "/letters/:year-:month-:day"
+articles = "/articles/:year-:month-:day"
