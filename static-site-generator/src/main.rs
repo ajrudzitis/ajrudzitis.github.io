@@ -3,10 +3,10 @@ use clap::{Parser, Subcommand};
 use std::path::PathBuf;
 use std::time::Duration;
 
-use static_site_generator::{Config, Generator};
 use static_site_generator::config::Paths;
 use static_site_generator::server::DevServer;
 use static_site_generator::watcher::Watcher;
+use static_site_generator::{Config, Generator};
 
 #[derive(Parser)]
 #[command(name = "ssg")]
@@ -63,9 +63,7 @@ async fn main() -> Result<()> {
         std::fs::canonicalize(&out).unwrap_or_else(|_| out)
     } else {
         // Default: public/ next to the site directory
-        site_dir.parent()
-            .unwrap_or(&site_dir)
-            .join("public")
+        site_dir.parent().unwrap_or(&site_dir).join("public")
     };
 
     match cli.command {
