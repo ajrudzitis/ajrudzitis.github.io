@@ -1,5 +1,6 @@
 ---
 title: "I survived COVID and all I got was this blog post."
+buttondown_id: em_12edb2vm6j84tape0mr18bee78
 ---
 
 While COVID-19 has not ceased to be a thing in our world, for better or for worse, it does seem that we’ve largely settled into a kind of normalcy. And while our world doesn’t look like it did in 2019, I wanted to take some time to appreciate the contrast between the present and some of the strangeness of 2020. Because in retrospect it was all really weird and I don’t want to forget about it. 
