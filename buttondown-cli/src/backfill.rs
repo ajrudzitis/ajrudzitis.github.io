@@ -11,19 +11,32 @@ pub fn run_backfill(
     dry_run: bool,
     verbose: bool,
 ) -> Result<BackfillResult> {
-    // Filter to only untracked letters
-    let untracked: Vec<_> = letters
+    // Separate tracked and untracked letters
+    let (tracked, untracked): (Vec<_>, Vec<_>) = letters
         .iter()
-        .filter(|l| l.buttondown_id.is_none())
         .cloned()
-        .collect();
+        .partition(|l| l.buttondown_id.is_some());
 
-    if untracked.is_empty() {
+    // Find new matches for untracked letters
+    let (new_matches, unmatched_letters, mut unmatched_emails) = if untracked.is_empty() {
         println!("All local letters already have buttondown_id");
-        return Ok(BackfillResult::default());
+        (Vec::new(), Vec::new(), emails.to_vec())
+    } else {
+        find_matches(&untracked, emails)
+    };
+
+    // Calculate already-matched letters and filter out their emails from unmatched
+    let mut already_matched = 0;
+    for letter in &tracked {
+        if let Some(ref bid) = letter.buttondown_id {
+            if unmatched_emails.iter().any(|e| &e.id == bid) {
+                already_matched += 1;
+                unmatched_emails.retain(|e| &e.id != bid);
+            }
+        }
     }
 
-    let (matches, unmatched_letters, unmatched_emails) = find_matches(&untracked, emails);
+    let matches = new_matches;
 
     // Print results
     if !matches.is_empty() {
@@ -85,7 +98,8 @@ pub fn run_backfill(
     }
 
     Ok(BackfillResult {
-        matches,
+        already_matched,
+        new_matches: matches,
         unmatched_letters,
         unmatched_emails,
     })
@@ -93,7 +107,8 @@ pub fn run_backfill(
 
 #[derive(Debug, Default)]
 pub struct BackfillResult {
-    pub matches: Vec<MatchResult>,
+    pub already_matched: usize,
+    pub new_matches: Vec<MatchResult>,
     pub unmatched_letters: Vec<LocalLetter>,
     pub unmatched_emails: Vec<ButtondownEmail>,
 }

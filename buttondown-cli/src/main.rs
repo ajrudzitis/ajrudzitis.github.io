@@ -292,7 +292,7 @@ async fn sync_status(config: &Config) -> Result<()> {
                     "{} \"{}\" ({})",
                     "[REMOTE]".blue(),
                     email.subject,
-                    &email.id[..8.min(email.id.len())]
+                    &email.id
                 );
             }
         }
@@ -327,11 +327,12 @@ async fn backfill(config: &Config) -> Result<()> {
     let result = run_backfill(&mut letters, &emails, config.dry_run, config.verbose)?;
 
     println!("\n{}", "Summary:".bold());
-    println!("  Matched: {}", result.matches.len());
+    println!("  Already matched: {}", result.already_matched);
+    println!("  Newly matched: {}", result.new_matches.len());
     println!("  Unmatched local: {}", result.unmatched_letters.len());
     println!("  Unmatched remote: {}", result.unmatched_emails.len());
 
-    if config.dry_run && !result.matches.is_empty() {
+    if config.dry_run && !result.new_matches.is_empty() {
         println!(
             "\n{}: Run without --dry-run to write buttondown_id to frontmatter.",
             "Tip".cyan()
