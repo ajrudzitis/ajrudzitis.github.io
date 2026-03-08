@@ -67,7 +67,11 @@ enum Commands {
     },
 
     /// Compare local letters with Buttondown emails
-    Sync,
+    Sync {
+        /// Download all remote-only emails as local letters
+        #[arg(long)]
+        download: bool,
+    },
 
     /// Match existing Buttondown emails to local letters
     Backfill,
@@ -100,9 +104,9 @@ async fn main() -> Result<()> {
             let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             update_letter(&config, &file).await?;
         }
-        Commands::Sync => {
+        Commands::Sync { download } => {
             let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
-            sync_status(&config).await?;
+            sync_status(&config, download).await?;
         }
         Commands::Backfill => {
             let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
@@ -256,7 +260,7 @@ async fn update_letter(config: &Config, file: &PathBuf) -> Result<()> {
     Ok(())
 }
 
-async fn sync_status(config: &Config) -> Result<()> {
+async fn sync_status(config: &Config, download: bool) -> Result<()> {
     let letters = load_letters(&config.letters_dir)?;
     let client = ButtondownClient::new(config);
     let emails = client.list_emails(None).await?;
@@ -265,7 +269,7 @@ async fn sync_status(config: &Config) -> Result<()> {
 
     let mut matched = 0;
     let mut local_only = 0;
-    let mut remote_only = 0;
+    let mut remote_only_emails = Vec::new();
 
     for state in &states {
         match state {
@@ -287,7 +291,7 @@ async fn sync_status(config: &Config) -> Result<()> {
                 println!("{} {} (no buttondown_id)", "[LOCAL]".yellow(), filename);
             }
             SyncState::RemoteOnly(email) => {
-                remote_only += 1;
+                remote_only_emails.push(email.clone());
                 println!(
                     "{} \"{}\" ({})",
                     "[REMOTE]".blue(),
@@ -301,13 +305,68 @@ async fn sync_status(config: &Config) -> Result<()> {
     println!("\n{}", "Summary:".bold());
     println!("  Matched: {}", matched);
     println!("  Local only: {}", local_only);
-    println!("  Remote only: {}", remote_only);
+    println!("  Remote only: {}", remote_only_emails.len());
 
     if local_only > 0 {
         println!(
             "\n{}: Run 'backfill' to match local letters with remote emails, or 'push' to create new drafts.",
             "Tip".cyan()
         );
+    }
+
+    // Download remote-only emails if requested
+    if download && !remote_only_emails.is_empty() {
+        if config.dry_run {
+            println!("\n{}", "[DRY-RUN] Would download:".yellow());
+            for email in &remote_only_emails {
+                match get_email_file_path(config, email) {
+                    Ok((_, path)) => {
+                        println!("  \"{}\" -> {}", email.subject, path.display());
+                    }
+                    Err(e) => {
+                        println!("  \"{}\" - {}", email.subject, e);
+                    }
+                }
+            }
+        } else {
+            println!("\n{}", "Downloading remote-only emails:".bold());
+            let mut downloaded = 0;
+            let mut skipped = 0;
+
+            for email in &remote_only_emails {
+                match save_email_as_letter(config, email) {
+                    Ok(Some(path)) => {
+                        downloaded += 1;
+                        println!(
+                            "  {} \"{}\" -> {}",
+                            "[DOWNLOADED]".green(),
+                            email.subject,
+                            path.display()
+                        );
+                    }
+                    Ok(None) => {
+                        skipped += 1;
+                        if config.verbose {
+                            println!(
+                                "  {} \"{}\" (already exists)",
+                                "[SKIPPED]".yellow(),
+                                email.subject
+                            );
+                        }
+                    }
+                    Err(e) => {
+                        println!(
+                            "  {} \"{}\" - {}",
+                            "[ERROR]".red(),
+                            email.subject,
+                            e
+                        );
+                    }
+                }
+            }
+
+            println!("\n  Downloaded: {}, Skipped: {}", downloaded, skipped);
+        }
     }
 
     Ok(())
@@ -346,14 +405,46 @@ async fn download_email(config: &Config, id: &str) -> Result<()> {
     let client = ButtondownClient::new(config);
     let email = client.get_email(id).await?;
 
-    // Determine date from publish_date or creation_date
+    if config.dry_run {
+        let (_, file_path) = get_email_file_path(config, &email)?;
+        println!("{}", "[DRY-RUN] Would download email:".yellow());
+        println!("  ID: {}", email.id);
+        println!("  Subject: {}", email.subject);
+        println!("  File: {}", file_path.display());
+        return Ok(());
+    }
+
+    match save_email_as_letter(config, &email)? {
+        Some(path) => {
+            println!("{} Downloaded email", "[SUCCESS]".green());
+            println!("  ID: {}", email.id);
+            println!("  Subject: {}", email.subject);
+            println!("  File: {}", path.display());
+        }
+        None => {
+            let (_, file_path) = get_email_file_path(config, &email)?;
+            println!(
+                "{} File already exists: {}",
+                "Warning:".yellow(),
+                file_path.display()
+            );
+        }
+    }
+
+    Ok(())
+}
+
+/// Get the filename and path for an email
+fn get_email_file_path(
+    config: &Config,
+    email: &buttondown_cli::models::ButtondownEmail,
+) -> Result<(String, std::path::PathBuf)> {
     let date = email
         .publish_date
         .or(email.creation_date)
         .map(|dt| dt.format("%Y-%m-%d").to_string())
         .ok_or_else(|| anyhow::anyhow!("Email has no publish_date or creation_date"))?;
 
-    // Determine slug from email.slug or generate from subject
     let slug = email
         .slug
         .clone()
@@ -363,21 +454,18 @@ async fn download_email(config: &Config, id: &str) -> Result<()> {
     let filename = format!("{}-{}.md", date, slug);
     let file_path = config.letters_dir.join(&filename);
 
-    if file_path.exists() {
-        println!(
-            "{} File already exists: {}",
-            "Warning:".yellow(),
-            file_path.display()
-        );
-        return Ok(());
-    }
+    Ok((filename, file_path))
+}
 
-    if config.dry_run {
-        println!("{}", "[DRY-RUN] Would download email:".yellow());
-        println!("  ID: {}", email.id);
-        println!("  Subject: {}", email.subject);
-        println!("  File: {}", file_path.display());
-        return Ok(());
+/// Save an email as a local letter file. Returns Some(path) if saved, None if already exists.
+fn save_email_as_letter(
+    config: &Config,
+    email: &buttondown_cli::models::ButtondownEmail,
+) -> Result<Option<std::path::PathBuf>> {
+    let (_, file_path) = get_email_file_path(config, email)?;
+
+    if file_path.exists() {
+        return Ok(None);
     }
 
     // Build the file content
@@ -388,15 +476,10 @@ async fn download_email(config: &Config, id: &str) -> Result<()> {
     );
     let content = format!("{}\n{}", frontmatter, email.body);
 
-    std::fs::write(&file_path, content)
+    std::fs::write(&file_path, &content)
         .with_context(|| format!("Failed to write file: {}", file_path.display()))?;
 
-    println!("{} Downloaded email", "[SUCCESS]".green());
-    println!("  ID: {}", email.id);
-    println!("  Subject: {}", email.subject);
-    println!("  File: {}", file_path.display());
-
-    Ok(())
+    Ok(Some(file_path))
 }
 
 /// Convert a title to a URL-friendly slug

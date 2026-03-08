@@ -35,6 +35,10 @@ buttondown-cli download --dry-run <email-id>
 buttondown-cli sync
 buttondown-cli sync --verbose
 
+# Download all remote-only emails as local letters
+buttondown-cli sync --download --dry-run
+buttondown-cli sync --download
+
 # Auto-match existing remote emails to local letters
 buttondown-cli backfill --dry-run
 buttondown-cli backfill
@@ -86,6 +90,8 @@ Compares local letters with remote emails and shows:
 - **Matched**: Local letter linked to remote email via `buttondown_id`
 - **Local only**: Letter without `buttondown_id` (not yet pushed or matched)
 - **Remote only**: Email with no matching local letter
+
+Use `--download` to download all remote-only emails as local letter files.
 
 ### `backfill`
 Automatically matches existing Buttondown emails to local letters using three strategies (in order):
