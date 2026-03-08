@@ -71,6 +71,12 @@ enum Commands {
 
     /// Match existing Buttondown emails to local letters
     Backfill,
+
+    /// Download email from Buttondown and save as local letter
+    Download {
+        /// Email ID to download
+        id: String,
+    },
 }
 
 #[tokio::main]
@@ -101,6 +107,10 @@ async fn main() -> Result<()> {
         Commands::Backfill => {
             let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             backfill(&config).await?;
+        }
+        Commands::Download { id } => {
+            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
+            download_email(&config, &id).await?;
         }
     }
 
@@ -139,7 +149,7 @@ async fn list_emails(config: &Config, status: Option<&str>, format: &str) -> Res
         };
 
         table.add_row(vec![
-            Cell::new(&email.id[..8.min(email.id.len())]),
+            Cell::new(&email.id),
             Cell::new(&email.subject),
             status_cell,
             Cell::new(date),
@@ -329,4 +339,74 @@ async fn backfill(config: &Config) -> Result<()> {
     }
 
     Ok(())
+}
+
+async fn download_email(config: &Config, id: &str) -> Result<()> {
+    let client = ButtondownClient::new(config);
+    let email = client.get_email(id).await?;
+
+    // Determine date from publish_date or creation_date
+    let date = email
+        .publish_date
+        .or(email.creation_date)
+        .map(|dt| dt.format("%Y-%m-%d").to_string())
+        .ok_or_else(|| anyhow::anyhow!("Email has no publish_date or creation_date"))?;
+
+    // Determine slug from email.slug or generate from subject
+    let slug = email
+        .slug
+        .clone()
+        .filter(|s| !s.is_empty())
+        .unwrap_or_else(|| slugify(&email.subject));
+
+    let filename = format!("{}-{}.md", date, slug);
+    let file_path = config.letters_dir.join(&filename);
+
+    if file_path.exists() {
+        println!(
+            "{} File already exists: {}",
+            "Warning:".yellow(),
+            file_path.display()
+        );
+        return Ok(());
+    }
+
+    if config.dry_run {
+        println!("{}", "[DRY-RUN] Would download email:".yellow());
+        println!("  ID: {}", email.id);
+        println!("  Subject: {}", email.subject);
+        println!("  File: {}", file_path.display());
+        return Ok(());
+    }
+
+    // Build the file content
+    let frontmatter = format!(
+        "---\ntitle: \"{}\"\nbuttondown_id: \"{}\"\n---\n",
+        email.subject.replace('"', "\\\""),
+        email.id
+    );
+    let content = format!("{}\n{}", frontmatter, email.body);
+
+    std::fs::write(&file_path, content)
+        .with_context(|| format!("Failed to write file: {}", file_path.display()))?;
+
+    println!("{} Downloaded email", "[SUCCESS]".green());
+    println!("  ID: {}", email.id);
+    println!("  Subject: {}", email.subject);
+    println!("  File: {}", file_path.display());
+
+    Ok(())
+}
+
+/// Convert a title to a URL-friendly slug
+fn slugify(title: &str) -> String {
+    title
+        .to_lowercase()
+        .chars()
+        .map(|c| if c.is_alphanumeric() { c } else { '-' })
+        .collect::<String>()
+        .split('-')
+        .filter(|s| !s.is_empty())
+        .collect::<Vec<_>>()
+        .join("-")
 }

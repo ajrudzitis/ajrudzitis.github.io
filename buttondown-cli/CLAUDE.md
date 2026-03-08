@@ -22,6 +22,9 @@ No tests are currently configured.
 cargo run -- list
 cargo run -- list --status draft --format json
 
+# Download an email as a local letter file
+cargo run -- download <email-id>
+
 # View sync status (compare local vs remote)
 cargo run -- sync --verbose
 
@@ -60,6 +63,7 @@ Global flags: `--dry-run`, `--verbose`, `--letters-dir <PATH>`, `--api-key-file 
 2. **ButtondownEmail**: Fetched from Buttondown API (`GET /emails`)
 
 3. **Sync tracking**: `buttondown_id` in frontmatter links local letter to remote email
+   - `download` fetches email and creates local file with `buttondown_id`
    - `push` creates draft and writes `buttondown_id` to frontmatter
    - `backfill` matches existing emails by slug/title/date and writes `buttondown_id`
    - `update` requires `buttondown_id` to already exist
