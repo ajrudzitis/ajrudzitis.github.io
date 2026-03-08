@@ -4,6 +4,7 @@ _site/
 
 # Rust/Cargo
 static-site-generator/target/
+buttondown-cli/target/
 # Note: Cargo.lock should be committed for applications (not ignored)
 
 # Ruby/Jekyll (legacy, can remove after full migration)
@@ -27,3 +28,6 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# API keys
+.buttondown-api-key
