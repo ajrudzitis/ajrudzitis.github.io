@@ -1,7 +1,7 @@
 ---
-title: "Amazing Children's Books"
+title: Amazing Children's Books
+buttondown_id: em_7ckn1abq2g89k955ga9bd9zbnr
 ---
-
 Happy New Year!
 
 As a follow up to my list of awesome things from 2022, I wanted to share something I've been wanting to put together for some time: a walk through of some of the best children's literature I have found to date. 

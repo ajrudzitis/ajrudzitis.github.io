@@ -1,7 +1,7 @@
 ---
-title:  "Guitar Lessons"
+title: Guitar Lessons
+buttondown_id: em_18pd6xdrh19yr9cp5kqhhf0njm
 ---
-
 Guitar Lessons
 ===
 

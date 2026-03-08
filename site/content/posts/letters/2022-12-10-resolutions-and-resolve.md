@@ -1,7 +1,7 @@
 ---
-title:  "Resolutions and Resolve"
+title: Resolutions and Resolve
+buttondown_id: em_5e7hcar2zf8x1ayz3zmp1r9pvj
 ---
-
 > Thirty spokes join one hub.
 > The wheel's use comes from emptiness.
 > 

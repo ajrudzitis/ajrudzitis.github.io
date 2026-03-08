@@ -1,7 +1,7 @@
 ---
-title:  "A Tale of Three Grinches"
+title: A Tale of Three Grinches
+buttondown_id: em_665apvqfka81h9p64n7ym8a6c0
 ---
-
 Dr. Seuss's book, *How the Grinch Stole Christmas!*, is a cornerstone of both children's literature and Christmas lore. The book was originally published in 1957, but has since then spawned three different movies, each with their own interpretation of the original story. In this essay, I will walk you through a comparative analysis of the three different interpretations. I hope in the end I will convince you that the 2018 film, *The Grinch* by Illumination, is the superior Grinch adaptation. 
 
 ![How the Grinch Stole Christmas! cover](https://cdn.aleksrudzitis.com/letters/2023-05-17/imgs/grinch-book.png)

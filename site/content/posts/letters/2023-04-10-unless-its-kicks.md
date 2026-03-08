@@ -1,7 +1,7 @@
 ---
-title:  "Unless It's Kicks"
+title: Unless It's Kicks
+buttondown_id: em_2m7h31swkf904a2g890j7q74nn
 ---
-
 There is a peach tree in our yard that has always looked a bit pathetic. The previous owners planted it in a spot which does not provide it the sun it needs, so it has always suffered. It looks like it has too few branches, and the few that exist reach desperately toward the bit of sun they can feel. Yuling and I annually discuss removing it, but it has never been a priority. 
 
 Spring becomes most palpable in Seattle when the flowering trees start to bloom. We have one just outside the east-facing kitchen window. Spring is also when the sunrise most coincides with the time I rise from bed. That tree with the sunrise behind it is my favorite thing about this time of year. 

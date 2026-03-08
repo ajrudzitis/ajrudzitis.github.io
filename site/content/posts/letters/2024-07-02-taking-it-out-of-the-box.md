@@ -1,7 +1,7 @@
 ---
-title: "Taking it back out of the box..."
+title: Taking it back out of the box...
+buttondown_id: em_2vnprcg1n68ert61m7me55k136
 ---
-
 Hello Everyone! 
 
 It has been a while. Allow me to compress the last 5 months into some rapid fire updates:

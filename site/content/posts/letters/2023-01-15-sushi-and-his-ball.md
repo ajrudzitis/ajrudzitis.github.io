@@ -1,7 +1,7 @@
 ---
-title: "Sushi and His Ball"
+title: Sushi and His Ball
+buttondown_id: em_7ee9kzbjhk8ee808dwpksd94x6
 ---
-
 I have a dog and his name is Sushi.
 
 Though, on occasion, I enjoy the company of a dog, I am not what you would call a "dog person." Sushi has not done anything to sway me from this position.

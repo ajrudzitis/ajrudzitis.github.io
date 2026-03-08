@@ -1,7 +1,7 @@
 ---
-title:  "The one where Aleks writes about nostalgia"
+title: The one where Aleks writes about nostalgia
+buttondown_id: em_5fza5zafk39n68rssmpavf6sed
 ---
-
 The one where Aleks writes about nostalgia
 ===
 

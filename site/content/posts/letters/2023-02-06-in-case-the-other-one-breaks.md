@@ -1,7 +1,7 @@
 ---
-title:  "In case the other one breaks..."
+title: In case the other one breaks...
+buttondown_id: em_6j9r2ckpsp8tkrba6jxrqvrsgf
 ---
-
 Amelia has a recent obsession with redundancy. 
 
 "Why did you put away one of your socks?" "In case the other one breaks."

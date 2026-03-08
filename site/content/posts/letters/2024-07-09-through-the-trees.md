@@ -1,7 +1,7 @@
 ---
-title: "Through the Trees"
+title: Through the Trees
+buttondown_id: em_6kv4nf1kgv96mt8det7m5wt00h
 ---
-
 **I**: The birdsong is more pervasive this year. More penetrating. I don't know if this reflects an external or internal change. 
 
 **II**: I am walking in Discovery Park. At every bench I encounter, I stop to read a little bit of [_The Timeless Way of Building_](https://en.wikipedia.org/wiki/The_Timeless_Way_of_Building) by Christopher Alexander. I also jot down any stray thought. 

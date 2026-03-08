@@ -1,7 +1,7 @@
 ---
-title:  "Inflation"
+title: Inflation
+buttondown_id: em_2nj99827eh90pa7r06mphd3mgr
 ---
-
 Last weekend we spent part of the day at Seattle Center to visit BrickCon (Seattle's own Lego festival). But this story isn't about Lego.
 
 On the way back to the monorail, we passed a man making balloon animals. We stopped to get one for Amelia. 
