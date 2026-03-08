@@ -1,5 +1,6 @@
 use anyhow::{Context, Result};
 use chrono::NaiveDate;
+use once_cell::sync::Lazy;
 use regex::Regex;
 use std::collections::HashMap;
 use std::fs;
@@ -7,6 +8,14 @@ use std::path::Path;
 use walkdir::WalkDir;
 
 use crate::models::{Frontmatter, LocalLetter};
+
+// Pre-compiled regexes for better performance
+static FRONTMATTER_RE: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"(?s)^---\s*\n(.*?)\n---\s*\n(.*)$").expect("valid regex"));
+static HTML_TITLE_RE: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"(?i)<title>([^<]+)</title>").expect("valid regex"));
+static DATE_SLUG_RE: Lazy<Regex> =
+    Lazy::new(|| Regex::new(r"^(\d{4})-(\d{2})-(\d{2})-(.+)$").expect("valid regex"));
 
 /// Load all letters from the letters directory
 pub fn load_letters(letters_dir: &Path) -> Result<Vec<LocalLetter>> {
@@ -99,9 +108,7 @@ impl LocalLetter {
 }
 
 fn parse_frontmatter(content: &str, is_html: bool) -> Result<(Frontmatter, String)> {
-    let re = Regex::new(r"(?s)^---\s*\n(.*?)\n---\s*\n(.*)$").unwrap();
-
-    if let Some(caps) = re.captures(content) {
+    if let Some(caps) = FRONTMATTER_RE.captures(content) {
         let yaml = &caps[1];
         let body = caps[2].to_string();
 
@@ -131,8 +138,9 @@ fn parse_frontmatter(content: &str, is_html: bool) -> Result<(Frontmatter, Strin
 }
 
 fn extract_html_title(html: &str) -> Option<String> {
-    let title_re = Regex::new(r"(?i)<title>([^<]+)</title>").unwrap();
-    title_re.captures(html).map(|caps| caps[1].trim().to_string())
+    HTML_TITLE_RE
+        .captures(html)
+        .map(|caps| caps[1].trim().to_string())
 }
 
 fn extract_date_and_slug(path: &Path) -> Result<(Option<NaiveDate>, String)> {
@@ -141,9 +149,7 @@ fn extract_date_and_slug(path: &Path) -> Result<(Option<NaiveDate>, String)> {
         .and_then(|s| s.to_str())
         .unwrap_or("untitled");
 
-    let date_re = Regex::new(r"^(\d{4})-(\d{2})-(\d{2})-(.+)$").unwrap();
-
-    if let Some(caps) = date_re.captures(filename) {
+    if let Some(caps) = DATE_SLUG_RE.captures(filename) {
         let year: i32 = caps[1].parse()?;
         let month: u32 = caps[2].parse()?;
         let day: u32 = caps[3].parse()?;
@@ -163,9 +169,7 @@ fn has_frontmatter(content: &str) -> bool {
 }
 
 fn update_frontmatter(content: &str, frontmatter: &Frontmatter) -> Result<String> {
-    let re = Regex::new(r"(?s)^---\s*\n(.*?)\n---\s*\n(.*)$").unwrap();
-
-    if let Some(caps) = re.captures(content) {
+    if let Some(caps) = FRONTMATTER_RE.captures(content) {
         let body = &caps[2];
         let yaml = serde_yaml::to_string(frontmatter)
             .with_context(|| "Failed to serialize frontmatter")?;

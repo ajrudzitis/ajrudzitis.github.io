@@ -41,21 +41,6 @@ impl Config {
         })
     }
 
-    /// Load config but don't require API key (for local-only operations)
-    pub fn load_without_api(letters_dir: Option<PathBuf>, dry_run: bool, verbose: bool) -> Self {
-        let api_key = load_api_key(None).unwrap_or_default();
-
-        let letters_dir = letters_dir.unwrap_or_else(|| {
-            PathBuf::from("site/content/posts/letters")
-        });
-
-        Self {
-            api_key,
-            letters_dir,
-            dry_run,
-            verbose,
-        }
-    }
 }
 
 /// Load API key from file or environment variable

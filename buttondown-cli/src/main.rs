@@ -86,34 +86,28 @@ enum Commands {
 #[tokio::main]
 async fn main() -> Result<()> {
     let cli = Cli::parse();
+    let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
 
     match cli.command {
         Commands::List { status, format } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             list_emails(&config, status.as_deref(), &format).await?;
         }
         Commands::Get { id } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             get_email(&config, &id).await?;
         }
         Commands::Push { file } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             push_letter(&config, &file).await?;
         }
         Commands::Update { file } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             update_letter(&config, &file).await?;
         }
         Commands::Sync { download } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             sync_status(&config, download).await?;
         }
         Commands::Backfill => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             backfill(&config).await?;
         }
         Commands::Download { id } => {
-            let config = Config::load(cli.api_key_file, cli.letters_dir, cli.dry_run, cli.verbose)?;
             download_email(&config, &id).await?;
         }
     }
@@ -462,19 +456,26 @@ fn save_email_as_letter(
     config: &Config,
     email: &buttondown_cli::models::ButtondownEmail,
 ) -> Result<Option<std::path::PathBuf>> {
+    use buttondown_cli::models::Frontmatter;
+    use std::collections::HashMap;
+
     let (_, file_path) = get_email_file_path(config, email)?;
 
     if file_path.exists() {
         return Ok(None);
     }
 
-    // Build the file content
-    let frontmatter = format!(
-        "---\ntitle: \"{}\"\nbuttondown_id: \"{}\"\n---\n",
-        email.subject.replace('"', "\\\""),
-        email.id
-    );
-    let content = format!("{}\n{}", frontmatter, email.body);
+    // Build frontmatter using proper YAML serialization
+    let frontmatter = Frontmatter {
+        title: email.subject.clone(),
+        layout: None,
+        date: None,
+        buttondown_id: Some(email.id.clone()),
+        extra: HashMap::new(),
+    };
+    let yaml = serde_yaml::to_string(&frontmatter)
+        .with_context(|| "Failed to serialize frontmatter")?;
+    let content = format!("---\n{}---\n\n{}", yaml, email.body);
 
     std::fs::write(&file_path, &content)
         .with_context(|| format!("Failed to write file: {}", file_path.display()))?;

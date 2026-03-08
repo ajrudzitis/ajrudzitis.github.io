@@ -1,5 +1,5 @@
 use anyhow::{Context, Result};
-use reqwest::Client;
+use reqwest::{Client, RequestBuilder};
 
 use crate::config::{Config, BUTTONDOWN_API_BASE};
 use crate::models::{
@@ -20,10 +20,25 @@ impl ButtondownClient {
         }
     }
 
+    /// Add authorization header to a request
+    fn auth(&self, request: RequestBuilder) -> RequestBuilder {
+        request.header("Authorization", format!("Token {}", self.api_key))
+    }
+
+    /// Build the URL for a single email
+    fn email_url(&self, id: &str) -> String {
+        format!("{}/emails/{}", BUTTONDOWN_API_BASE, id)
+    }
+
+    /// Build the URL for listing emails
+    fn emails_url(&self) -> String {
+        format!("{}/emails", BUTTONDOWN_API_BASE)
+    }
+
     /// List all emails from Buttondown, optionally filtered by status
     pub async fn list_emails(&self, status: Option<&str>) -> Result<Vec<ButtondownEmail>> {
         let mut all_emails = Vec::new();
-        let mut url = format!("{}/emails", BUTTONDOWN_API_BASE);
+        let mut url = self.emails_url();
 
         if let Some(s) = status {
             url.push_str(&format!("?status={}", s));
@@ -31,9 +46,7 @@ impl ButtondownClient {
 
         loop {
             let response: EmailListResponse = self
-                .client
-                .get(&url)
-                .header("Authorization", format!("Token {}", self.api_key))
+                .auth(self.client.get(&url))
                 .send()
                 .await
                 .with_context(|| "Failed to send request to Buttondown API")?
@@ -57,12 +70,8 @@ impl ButtondownClient {
 
     /// Get a specific email by ID
     pub async fn get_email(&self, id: &str) -> Result<ButtondownEmail> {
-        let url = format!("{}/emails/{}", BUTTONDOWN_API_BASE, id);
-
         let email: ButtondownEmail = self
-            .client
-            .get(&url)
-            .header("Authorization", format!("Token {}", self.api_key))
+            .auth(self.client.get(self.email_url(id)))
             .send()
             .await
             .with_context(|| "Failed to send request to Buttondown API")?
@@ -78,8 +87,6 @@ impl ButtondownClient {
     /// Create a new email as draft
     /// SAFETY: This always sets status to "draft" to prevent accidental sends
     pub async fn create_email(&self, subject: &str, body: &str) -> Result<ButtondownEmail> {
-        let url = format!("{}/emails", BUTTONDOWN_API_BASE);
-
         let request = CreateEmailRequest {
             subject: subject.to_string(),
             body: body.to_string(),
@@ -87,9 +94,7 @@ impl ButtondownClient {
         };
 
         let email: ButtondownEmail = self
-            .client
-            .post(&url)
-            .header("Authorization", format!("Token {}", self.api_key))
+            .auth(self.client.post(self.emails_url()))
             .json(&request)
             .send()
             .await
@@ -106,8 +111,6 @@ impl ButtondownClient {
     /// Update an existing email
     /// SAFETY: This only updates subject and body, never status
     pub async fn update_email(&self, id: &str, subject: &str, body: &str) -> Result<ButtondownEmail> {
-        let url = format!("{}/emails/{}", BUTTONDOWN_API_BASE, id);
-
         let request = UpdateEmailRequest {
             subject: subject.to_string(),
             body: body.to_string(),
@@ -115,9 +118,7 @@ impl ButtondownClient {
         };
 
         let email: ButtondownEmail = self
-            .client
-            .patch(&url)
-            .header("Authorization", format!("Token {}", self.api_key))
+            .auth(self.client.patch(self.email_url(id)))
             .json(&request)
             .send()
             .await

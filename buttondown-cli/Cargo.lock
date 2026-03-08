@@ -115,6 +115,7 @@ dependencies = [
  "clap",
  "colored",
  "comfy-table",
+ "once_cell",
  "regex",
  "reqwest",
  "serde",

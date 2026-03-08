@@ -28,11 +28,11 @@ pub fn run_backfill(
     // Calculate already-matched letters and filter out their emails from unmatched
     let mut already_matched = 0;
     for letter in &tracked {
-        if let Some(ref bid) = letter.buttondown_id {
-            if unmatched_emails.iter().any(|e| &e.id == bid) {
-                already_matched += 1;
-                unmatched_emails.retain(|e| &e.id != bid);
-            }
+        if let Some(ref bid) = letter.buttondown_id
+            && unmatched_emails.iter().any(|e| &e.id == bid)
+        {
+            already_matched += 1;
+            unmatched_emails.retain(|e| &e.id != bid);
         }
     }
 

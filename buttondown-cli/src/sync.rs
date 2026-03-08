@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::letter::normalize_for_comparison;
 use crate::models::{ButtondownEmail, LocalLetter, MatchResult, MatchType, SyncState};
 
@@ -9,8 +11,7 @@ pub fn compare_letters_and_emails(
     let mut states = Vec::new();
 
     // Track which emails have been matched
-    let mut matched_email_ids: std::collections::HashSet<String> =
-        std::collections::HashSet::new();
+    let mut matched_email_ids: HashSet<String> = HashSet::new();
 
     // First, handle letters that already have buttondown_id
     for letter in letters {
@@ -47,8 +48,7 @@ pub fn find_matches(
 ) -> (Vec<MatchResult>, Vec<LocalLetter>, Vec<ButtondownEmail>) {
     let mut matches = Vec::new();
     let mut unmatched_letters: Vec<LocalLetter> = Vec::new();
-    let mut matched_email_ids: std::collections::HashSet<String> =
-        std::collections::HashSet::new();
+    let mut matched_email_ids: HashSet<String> = HashSet::new();
 
     // Only consider letters without buttondown_id
     let untracked_letters: Vec<_> = letters
