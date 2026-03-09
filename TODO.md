@@ -6,11 +6,12 @@ This document tracks planned work for the website and related infrastructure.
 
 ## Content Organization & Cleanup
 
-### Move Article to Letters
-- [ ] Move `2019-06-30-thats-not-what-happened.html` from `site/static/articles/` to `site/content/posts/letters/`
-  - Currently in static directory as standalone HTML
-  - Should be integrated into letters collection
-  - File: `/site/static/articles/2019-06-30-thats-not-what-happened.html`
+### ~~Move Article to Letters~~ Integrate Articles as Category
+- [x] Move `2019-06-30-thats-not-what-happened.html` from `site/static/articles/` to `site/content/posts/articles/`
+  - Moved to content system with proper frontmatter
+  - Articles category added to top navigation
+  - Articles use slug-based URLs (e.g., `/articles/2019-06-30-thats-not-what-happened.html`)
+  - Articles are not synced with Buttondown (unlike letters)
 
 ### Remove Legacy Links
 - [ ] Remove Tinyletter links from 7 old letter archives (2020-2021 HTML files)

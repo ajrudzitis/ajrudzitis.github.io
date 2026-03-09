@@ -12,15 +12,6 @@ the domain name that I primarily have for personal email.
 
 Unless you're really interested in my personal life, I recommend taking yourself over to my substack: [Bits and Being](https://www.bitsandbeing.com)
 
-
-# Articles
-
-{% if posts_by_category.articles %}
-{% for post in posts_by_category.articles %}
-*  {{ post.date }}: [{{ post.frontmatter.title }}]({{ post.url }})
-{% endfor %}
-{% endif %}
-
 # Letters
 
 I'm trying out a new thing where rather than posting to Facebook, I send out

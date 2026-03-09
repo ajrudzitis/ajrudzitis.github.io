@@ -81,6 +81,10 @@ cargo run -- serve --root /path/to/site --output-dir /path/to/output --port 8000
   - URL pattern: Defined in `config.toml` permalinks (e.g., `/letters/:year-:month-:day.html`)
   - Category index: Generated at `/{category}/index.html`
 
+Current categories:
+- **letters/**: Personal newsletter posts (synced with Buttondown via `buttondown-cli`)
+- **articles/**: Standalone articles (not synced with Buttondown)
+
 ### Frontmatter
 
 Files can include YAML frontmatter:

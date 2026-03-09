@@ -10,4 +10,4 @@ linkedin = "aleksrudzitis"
 
 [permalinks]
 letters = "/letters/:year-:month-:day"
-articles = "/articles/:year-:month-:day"
+articles = "/articles/:year-:month-:day-:slug"

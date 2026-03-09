@@ -12,16 +12,6 @@
         <h1><a href="https://www.bitsandbeing.com">Substack</a></h1>
         <p>Unless you're really interested in my personal life, I recommend taking yourself over to my substack: <a href="https://www.bitsandbeing.com">Bits and Being</a></p>
 
-        <h1>Articles</h1>
-        <ul>
-        {% if posts_by_category.articles %}
-        {% for post in posts_by_category.articles %}
-            <li>{{ post.date }}: <a href="{{ post.url }}">{{ post.frontmatter.title }}</a></li>
-        {% endfor %}
-        {% endif %}
-            <li>2019 June 30: <a href="/articles/2019-06-30-thats-not-what-happened.html">That's Not What Happened</a></li>
-        </ul>
-
         <h1>Letters</h1>
         <p>I'm trying out a new thing where rather than posting to Facebook, I send out
         periodic letters to my family and friends who are interested in what is going

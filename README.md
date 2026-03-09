@@ -130,7 +130,7 @@ linkedin = "username"
 
 [permalinks]
 letters = "/letters/:year-:month-:day"
-articles = "/articles/:slug"
+articles = "/articles/:year-:month-:day-:slug"
 ```
 
 Permalink variables: `:year`, `:month`, `:day`, `:slug`
