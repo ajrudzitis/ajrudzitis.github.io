@@ -1,11 +1,12 @@
 ---
 title: Playground
 buttondown_id: em_2ty1qqsdrm96ca226ep6wm4m04
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext --><div class="message-body"><div>Today was Amelia's first time playing on a playground.<br/>
 <br/>
-We took her to the playground at Magnuson Park. We had pass by with her on the way to the dog park on previous occasions, but she had been very timid about leaving our side. Today, with a little encouragement, we were able to get her to climb up the stair and slide down the slide. After doing it once, she was hooked, and spent the next 20 minutes running up and sliding down on her own.<br/>
+We took her to the playground at Magnuson Park. We had passed by with her on the way to the dog park on previous occasions, but she had been very timid about leaving our side. Today, with a little encouragement, we were able to get her to climb up the stair and slide down the slide. After doing it once, she was hooked, and spent the next 20 minutes running up and sliding down on her own.<br/>
 <br/>
 Although there were many kids at the park, there was no one else on this particular play structure, so we were able to avoid Covid-19 risks. Mask use in the park was also ubiquitous. Seattle is keeping it together.<br/>
 <br/>
