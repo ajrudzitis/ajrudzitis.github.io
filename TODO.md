@@ -28,17 +28,19 @@ This document tracks planned work for the website and related infrastructure.
 ## Buttondown Email Integration
 
 ### CLI Sync Tool
-- [ ] Design and implement Buttondown CLI sync tool architecture
+- [x] Design and implement Buttondown CLI sync tool architecture
   - Manual command-based workflow (not automated)
   - Should support selective sync of letters
+  - **Done**: `buttondown-cli` tool created with list, download, sync, backfill, push, update commands
 
-- [ ] Implement Buttondown API authentication and article push functionality
+- [x] Implement Buttondown API authentication and article push functionality
   - API documentation: https://api.buttondown.email/
   - Support creating/updating emails via API
+  - **Done**: Full API integration with push (create drafts) and update functionality
 
-- [ ] Add metadata tracking for which letters are published to Buttondown
-  - Consider adding frontmatter field: `buttondown_url` or `buttondown_published: true`
-  - Track publication state to enable revision syncing
+- [x] Add metadata tracking for which letters are published to Buttondown
+  - Uses `buttondown_id` frontmatter field to link local letters to remote emails
+  - **Done**: backfill command auto-matches existing emails, sync tracks state
 
 ---
 
@@ -56,8 +58,8 @@ Review all 37 letters for grammatical errors, misspellings, and misplaced words.
 
 ### Sync Corrections
 - [ ] Sync proofread letter revisions to Buttondown for previously published letters
-  - Use Buttondown sync tool to update published versions
-  - Only sync letters that have `buttondown_url` or equivalent metadata
+  - Use `buttondown-cli update` to push revisions to published versions
+  - Only sync letters that have `buttondown_id` in frontmatter
 
 ---
 
@@ -151,11 +153,11 @@ Deploy TUI app to AWS with automated deployment pipeline.
 
 ## Open Questions
 
-1. **Buttondown metadata format**: Should we use `buttondown_url`, `buttondown_id`, or `published_to_buttondown: true` in frontmatter?
+1. ~~**Buttondown metadata format**: Should we use `buttondown_url`, `buttondown_id`, or `published_to_buttondown: true` in frontmatter?~~ **Resolved**: Using `buttondown_id` in frontmatter
 2. **TUI network protocol**: SSH (secure, auth required) or telnet (simpler, fully public)?
 3. **AWS region/instance**: Preferred region and instance size for TUI deployment?
 4. **Theme switching UI**: Toggle button, keyboard shortcut, or both?
 
 ---
 
-*Last updated: 2026-03-07*
+*Last updated: 2026-03-08*
