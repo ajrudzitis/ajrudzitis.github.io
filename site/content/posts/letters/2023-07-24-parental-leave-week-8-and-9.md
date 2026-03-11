@@ -1,6 +1,7 @@
 ---
 title: Parental Leave - Week 8 and 9
 buttondown_id: em_4xp5wwkv0b8rstqp8crw2yqv6d
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Bonjour!
@@ -11,7 +12,7 @@ The highlight of my day, currently, is the first smile I get from Jonny each mor
 
 We will be starting daycare for him in a couple of weeks, when I end my leave and return to work. 
 
-Sometime before our LAX trip, Amelia watched an episode of Spongebob Squarepants that depicted Spongebob's mental process as a collection of tiny Spongebobs working collaboratively in her head. Since then, she has been referring to her self as a collection of little Amelias. Like, if she has an idea or a new opinion, she will tell me one of the Amelias thought of something. Or if she is thinking, she will say the Amelias are working on the problem. 
+Sometime before our LAX trip, Amelia watched an episode of Spongebob Squarepants that depicted Spongebob's mental process as a collection of tiny Spongebobs working collaboratively in his head. Since then, she has been referring to herself as a collection of little Amelias. Like, if she has an idea or a new opinion, she will tell me one of the Amelias thought of something. Or if she is thinking, she will say the Amelias are working on the problem. 
 
 I've used this mental model to try to improve her focus while practicing violin, explaining that the reasons she gets distracted is that one Amelia wants to practice, while the others want to do things like coloring.
 
