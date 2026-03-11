@@ -1,6 +1,7 @@
 ---
 title: Being Aleks
 buttondown_id: em_2gh6hb5av78dvs65t9e3a0ht8f
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->6:15 - Alarm on my iPhone goes off. I've never changed it from the default sound. How many people start their day the same way? I mash buttons until it probably goes into snooze.
@@ -59,7 +60,7 @@ buttondown_id: em_2gh6hb5av78dvs65t9e3a0ht8f
 
 16:48 - Pull into Villa. Most kids get picked up earlier at the end of the normal school day. Amelia is enrolled in an extended day program, which lasts until 5 pm. This gives her some more play time with her friends and lets Yuling and me get more work done. It also means most kids are gone by the time I pick her up and there isn't a big pick-up/drop-off crunch. I park next to the school building. I tell myself this means we don't have to climb the stairs again, but in my heart of hearts, I know this is a lie.
 
-16:51 - Push the buzzer to be let into the school. No one ever asks who I am and they open the door. I like to think it is because the recognize me. At least I don't look suspicious.
+16:51 - Push the buzzer to be let into the school. No one ever asks who I am and they open the door. I like to think it is because they recognize me. At least I don't look suspicious.
 
 16:53 - I locate where Amelia is. This is usually on the preschool playground, but sometimes they are inside if it is raining or there are fewer kids and they want to increase the density of the children. Amelia will be playing with a friend. I usually stand back for a bit to watch how she plays. Outside, next to the playground, there is an over-sized game of connect-four, which has long been scrapped. The legs have become swords, the game pieces plates for pretend picnics. If she doesn't notice me after a couple of minutes, I'll call out to her and she always comes running, before running back to what she was doing. It takes some convincing for her to leave; I am glad she likes it here.
 
