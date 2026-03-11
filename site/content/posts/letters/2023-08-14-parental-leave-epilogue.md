@@ -1,6 +1,7 @@
 ---
 title: Parental Leave - Epilogue
 buttondown_id: em_0xhhm10anb90evpht6sjk4b96e
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Greetings Friends!
@@ -20,7 +21,7 @@ And speaking of bikes, I am excited to report that today Amelia took her first p
 
 Definitely a proud dad moment. 
 
-On my end, everything is been mostly good. I can feel the health dropping off though as I won't be taking walks for hours with Jonny anymore. I also picked up [American Prometheus](https://en.wikipedia.org/wiki/American_Prometheus), a biography of J. Robert Oppenheimer. It has been alright so far.
+On my end, everything has been mostly good. I can feel the health dropping off though as I won't be taking walks for hours with Jonny anymore. I also picked up [American Prometheus](https://en.wikipedia.org/wiki/American_Prometheus), a biography of J. Robert Oppenheimer. It has been alright so far.
 
 That's all for now friends. If we didn't have a chance to connect over parental leave, I hope I still get a chance to see you before the summer is out.
 
