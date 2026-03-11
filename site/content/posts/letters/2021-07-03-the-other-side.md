@@ -1,6 +1,7 @@
 ---
 title: The Other Side
 buttondown_id: em_4zq42w13bp9e9b2z8cg2hykeag
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext --><div class="message-body"><div>
@@ -18,7 +19,7 @@ buttondown_id: em_4zq42w13bp9e9b2z8cg2hykeag
 <div> </div>
 <div><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7">Last year Amelia only dipped her toes in the water, but this year she happily floated up and down in front of the beach in a little inner tube. </span></div>
 <div> </div>
-<div><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7">Tuesday, on the back side of the heat wave, we checked into a little Airbnb on Bainbridge Island. We planned it far in advance, well before the heat wave was foretasted. It is back to being only comfortably warm. In the loft there is an acoustic guitar with a missing string. Bainbridge Island, to my slight surprise, has a music store in town. I purchased some strings and fixed the guitar before leaving.</span></div>
+<div><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7">Tuesday, on the back side of the heat wave, we checked into a little Airbnb on Bainbridge Island. We planned it far in advance, well before the heat wave was forecasted. It is back to being only comfortably warm. In the loft there is an acoustic guitar with a missing string. Bainbridge Island, to my slight surprise, has a music store in town. I purchased some strings and fixed the guitar before leaving.</span></div>
 <div> </div>
 <div><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7">Yuling and I took the entire week off. It is the first week we've taken off together</span><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7 s-lparen"> </span><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7 h-lparen">(and</span><span class="author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qoxuz87zbv3rst6reqqz88zz68zqlstaz80zhz77zj85vz65zmz80z7"> traveled!) since the start of the pandemic. I like it. </span></div>
 <div> </div>
