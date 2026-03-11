@@ -1,6 +1,7 @@
 ---
-title: Time’s Arrow Marches Forward
+title: Time's Arrow Marches Forward
 buttondown_id: em_026268vs9z9txsc0wc06645skz
+revised_on: 2026-03-08
 ---
 Time’s Arrow Marches Forward
 ===
@@ -21,7 +22,7 @@ Anyway, here are the facts:
  
 So that’s happening and we’re all happy and excited. 
  
-In the mean time, we’ve done some other things. 
+In the meantime, we’ve done some other things. 
  
 At the end of August we went to Hawaii for a bit. Amelia was surprisingly good on the airplane in both directions. 
  
