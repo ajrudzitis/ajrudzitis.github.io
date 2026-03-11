@@ -1,6 +1,7 @@
 ---
 title: Parental Leave - Week 4
 buttondown_id: em_77cghsmhx69fb82az5jh2bw86y
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Greetings!
@@ -19,7 +20,7 @@ Jonny:
 Amelia:
 
 - Still working on building up a rhythm when it comes to good habits. The biggest challenge is definitely the variance in her energy levels; impossible to do anything when she is tired. She has been enthusiastically tackling her Kumon work sheets, instruments and cleaning up less so. 
-- We bought her a kid’s ukulele a long time ago, but this week she showed interest in having me help her play it. We did that instead of practicing violin one day; I hold her how to hold it properly and play a C chord. 
+- We bought her a kid’s ukulele a long time ago, but this week she showed interest in having me help her play it. We did that instead of practicing violin one day; I showed her how to hold it properly and play a C chord. 
 - Amelia's preschool has a toy, Frank the Fox, that takes turns spending the weekend at home with different kids. This weekend it was our turn. We got to take pictures with him and Amelia at the library, playground, zoo, eating out, and more. 
 
 Me:
