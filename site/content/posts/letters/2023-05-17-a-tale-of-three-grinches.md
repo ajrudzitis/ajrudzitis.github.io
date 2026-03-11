@@ -1,6 +1,7 @@
 ---
 title: A Tale of Three Grinches
 buttondown_id: em_665apvqfka81h9p64n7ym8a6c0
+revised_on: 2026-03-08
 ---
 Dr. Seuss's book, *How the Grinch Stole Christmas!*, is a cornerstone of both children's literature and Christmas lore. The book was originally published in 1957, but has since then spawned three different movies, each with their own interpretation of the original story. In this essay, I will walk you through a comparative analysis of the three different interpretations. I hope in the end I will convince you that the 2018 film, *The Grinch* by Illumination, is the superior Grinch adaptation. 
 
@@ -32,7 +33,7 @@ The 2000 film elaborates significantly on Whoville in the present day. The Who c
 
 In the 2000 film, we also see the relationship between the Grinch and the present-day Whos. He is generally feared and reviled by the Whos. Teenagers dare each other to visit his cave (where he is more than happy to play up his own infamy). He visits Whoville in disguise, and when he is recognized by a young girl, she reacts in fear. He does have a mailbox at the Whoville post office, but Whos remark with disdain that there are never any Christmas cards coming and going. When little Cindy Lou Who suggests that the Grinch be made the Holiday Cheermeister  (because he most of all is in need of cheer), she knows it is a drastic act and it is not one without controversy. (The Grinch ultimately agrees to fulfill this role, and is briefly won over by the celebrations, but is ultimately reminded of past grievances, which is what motivates him to "steal" Christmas in this film.)
 
-The 2018 film has a very different take; one that is much more optimistic. In the 2018 Whoville, we still see a Whoville that is infatuated with the Christmas season, and all the decorations and gifts it brings. It does, perhaps, at times even suffer from glimmers of the same tendency toward excess (e.g. the tree must be ten times bigger than last year). However, on the whole, the movie depicts a town which is much more balanced. The Whos are kind and cooperative. There is no competition. There is no one attempting to out do their neighbors.
+The 2018 film has a very different take; one that is much more optimistic. In the 2018 Whoville, we still see a Whoville that is infatuated with the Christmas season, and all the decorations and gifts it brings. It does, perhaps, at times even suffer from glimmers of the same tendency toward excess (e.g. the tree must be ten times bigger than last year). However, on the whole, the movie depicts a town which is much more balanced. The Whos are kind and cooperative. There is no competition. There is no one attempting to outdo their neighbors.
 
 As in the 2000 film, in the 2018 film the Grinch is shown interacting with the Whos. However, in the more recent film, the Whos do not appear to be afraid of the Grinch. He is greeted warmly and invited to participate in the festivities; it is only by his own and continual choice that he is excluded. The 2018 film goes so far as to depict a Who, living on the outskirts of town, that considers the Grinch to be his best friend (although the feeling does not appear to be mutual.)  
 
@@ -68,7 +69,7 @@ As in the previous films, he climbs to the top of Mount Crumpet to dispose of th
 >
 > And the Grinch heard with his heart, and it tripled in size. [2]
 
-As in the other films, he returns the gifts. But in this film, rather than immediately joining in the holiday celebrations, he meekly returns back to his lair. The final resolution comes when Cindy herself explains he has been forgiven and extends the invitation for him to celebrate with them, further confirming there was never really excluded. 
+As in the other films, he returns the gifts. But in this film, rather than immediately joining in the holiday celebrations, he meekly returns back to his lair. The final resolution comes when Cindy herself explains he has been forgiven and extends the invitation for him to celebrate with them, further confirming he was never really excluded. 
 
 In this version the materialism of the Whos and the attack upon it was tangential. The Grinch saw, despite his efforts to ruin the material aspects of Christmas, the Whos were still happy. His salvation came not from recognizing the true spirit of Christmas, but accepting an invitation to a moment of vulnerability. The Grinch experiences that which has been there and available to him all along. 
 
