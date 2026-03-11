@@ -1,6 +1,7 @@
 ---
 title: Switching to iced lattes
 buttondown_id: em_4ndazwvp3n9xdvmht7b9t1s9qb
+revised_on: 2026-03-08
 ---
 Switching to iced lattes
 ===
@@ -15,7 +16,7 @@ On the positive side, it was reassuring to see all the Covid tests which we had 
  
 I’ve been using some of the downtime to catch up on reading. I finally cracked open my copy of the Bhagavad Gita (given to me by a group of Hare Krishnas in college) and found it much more approachable than I would have expected given outward appearances.
  
-Speaking of reading, I also embarked on a small project to collect a list of all the books I have read in one place: https://www.aleksrudzitis.com/bookshelf.html. This took a few weekends of looking at my physical bookshelf, Kndle, and Amazon order history but I think I got it to the point where it reflects at least most of my adult reading history.[0] I hope you’ll take a look and strike up a conversation about anything that looks interesting. 
+Speaking of reading, I also embarked on a small project to collect a list of all the books I have read in one place: https://www.aleksrudzitis.com/bookshelf.html. This took a few weekends of looking at my physical bookshelf, Kindle, and Amazon order history but I think I got it to the point where it reflects at least most of my adult reading history.[0] I hope you’ll take a look and strike up a conversation about anything that looks interesting. 
  
 Amelia is doing well. She has a lot to say and it often comes out with a slight British accent due to all the Peppa Pig we let her watch. 
  
