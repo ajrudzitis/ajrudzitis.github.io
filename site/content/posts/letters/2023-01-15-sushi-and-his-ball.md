@@ -1,6 +1,7 @@
 ---
 title: Sushi and His Ball
 buttondown_id: em_7ee9kzbjhk8ee808dwpksd94x6
+revised_on: 2026-03-08
 ---
 I have a dog and his name is Sushi.
 
@@ -18,7 +19,7 @@ This is a story about Sushi and his ball.
 
 The dog that can't stop himself from yapping at the fence or growling at any slightly suspicious sound becomes the epitome of focus when that ball is in my hand.
 
-He who's body seems to struggle with the basic functions required to exist is suddenly nimble and agile. He anticipates. He grabs them out of the air.
+He whose body seems to struggle with the basic functions required to exist is suddenly nimble and agile. He anticipates. He grabs them out of the air.
 
 And the only time he doesn't diligently return the ball is when he is finally too exhausted to do so.
 
