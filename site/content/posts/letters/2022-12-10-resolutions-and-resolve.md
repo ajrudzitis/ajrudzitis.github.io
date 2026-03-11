@@ -1,6 +1,7 @@
 ---
 title: Resolutions and Resolve
 buttondown_id: em_5e7hcar2zf8x1ayz3zmp1r9pvj
+revised_on: 2026-03-08
 ---
 > Thirty spokes join one hub.
 > The wheel's use comes from emptiness.
@@ -19,7 +20,7 @@ buttondown_id: em_5e7hcar2zf8x1ayz3zmp1r9pvj
 
 Two little ones can make life feel a bit crowded. (Even as I duck out to put these words to a page, I have no more than a few minutes before "daddy! daddy!" booms through the house and she finds me down in my office. She wanted to see again where I keep the emergency glow sticks. Not to have one; just to remember they are there.)
 
-My struggle these last few weeks has been to remember the work Yuling and I are putting in is only the structure, and to live and breath in the space we create; the "emptiness" between the work. In other words: to slow down and let that life breath a bit. 
+My struggle these last few weeks has been to remember the work Yuling and I are putting in is only the structure, and to live and breath in the space we create; the "emptiness" between the work. In other words: to slow down and let that life breathe a bit. 
 
 Besides general mindfulness vibes, I am working on a couple of other resolutions for the new year:
 
