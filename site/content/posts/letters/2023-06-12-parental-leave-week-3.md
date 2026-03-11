@@ -1,6 +1,7 @@
 ---
 title: Parental Leave - Week 3
 buttondown_id: em_5e706sbdet8arbzx4r1me16vjz
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Greetings!
@@ -16,7 +17,7 @@ Amelia:
 
 - Amelia appears to have the same cold.
 - This week, Amelia was a flower girl in a friend's wedding. I hope to have some pictures in a couple of weeks to share from that. We were unsure of how it would go, considering she had no experience or practice ahead of time. However, everyone was very happy with her performance. Her flower disbursement while walking down the aisle could best be described as "deliberate."
-- We've been working a lot with Amelia on forming good habits. Amelia has a habit chart with things like "do homework" and "practice violin", as well as some she choose like "clean up table." She has been so far very enthusiastic about that process. 
+- We've been working a lot with Amelia on forming good habits. Amelia has a habit chart with things like "do homework" and "practice violin", as well as some she chose like "clean up table." She has been so far very enthusiastic about that process. 
 
 Me:
 
