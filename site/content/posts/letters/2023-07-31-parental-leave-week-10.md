@@ -1,13 +1,14 @@
 ---
 title: Parental Leave - Week 10
 buttondown_id: em_6kfmhrhj0s8ksa022jsk9sdmms
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Hello!
 
 On the home stretch of parental leave. Technically, this coming week will be my next, but I may be taking some additional PTO since Jonathan doesn't start daycare until August 7th, and I want to be there for that transition, and also to have a little time to transition myself.
 
-Speaking of Jonathan, he continues increase in speed and power. He is also starting to sound out some distinct syllables; I think "da da" is just around the corner. 
+Speaking of Jonathan, he continues to increase in speed and power. He is also starting to sound out some distinct syllables; I think "da da" is just around the corner. 
 
 Yuling acquired a (much coveted) used Woom bike for Amelia, as she will be attending a learn-to-bike camp at the end of the month. The new-to-her bike of course prompted her to finally start using the scooter we got her a year and a half ago that she never used. The last few days she has been doing about mile long excursions on her scooter. 
 
