@@ -1,6 +1,7 @@
 ---
 title: Story Time
 buttondown_id: em_09cr7bnh7a818sm0x83fgamfs0
+revised_on: 2026-03-08
 ---
 Story Time
 ===
@@ -9,7 +10,7 @@ _Published March 25th, 2022_
 
 For those of you who have been in the industry for a while, this probably won’t be too interesting. However, if you’ve joined since things like Slack and Zoom became commonplace, it might be a little more novel.
  
-I joined Amazon in 2010 after graduating. Back then we didn’t have Zoom or Slack. We didn’t have Microsoft Teams. We didn’t even had Skype for Business. We had Microsoft Office Communicator. It looked a bit like the old MSN Messenger, and no one really cared for it.
+I joined Amazon in 2010 after graduating. Back then we didn’t have Zoom or Slack. We didn’t have Microsoft Teams. We didn't even have Skype for Business. We had Microsoft Office Communicator. It looked a bit like the old MSN Messenger, and no one really cared for it.
  
 But this isn’t a story about that. This is a story about:
 
@@ -19,7 +20,7 @@ Back when I joined Amazon, everyone was issued one of these.
  
 Since we didn’t have Zoom (or whatever), it wasn’t uncommon when you wanted to have a synchronous conversation with an engineer in a different location, that you would do this:
  
-- Find their name on in internal website called the phone tool
+- Find their name on an internal website called the phone tool
 - Find a 5 digit extension on their page
 - Push physical buttons one at a time
 - Pick up a physical handset and proceed to hold it against your ear like a cave person for the next 30 mins or whatever.
@@ -38,7 +39,7 @@ My extension was: 0...0...0...1
  
 That’s right. Somehow they gave me, a lowly SDE 1, extension number 1. [0] Again, I believe this was completely random. 
  
-It is also important to know that all Amazon extensions mapped to a full 10 digit number, which was done by prefixing a the area code (206) plus the first 3 digits (let’s say 266 in this case, because that’s what it was). That made my phone number 206-266-0001. 
+It is also important to know that all Amazon extensions mapped to a full 10 digit number, which was done by prefixing the area code (206) plus the first 3 digits (let’s say 266 in this case, because that’s what it was). That made my phone number 206-266-0001. 
  
 Surprisingly, this did not lead to me getting lots of spam calls, as spammers crawled the Amazon corporate phone namespace.
  
