@@ -1,6 +1,7 @@
 ---
 title: To SoCal and back
 buttondown_id: em_6j5csv6e1j8pjbj5bjpn3zzdce
+revised_on: 2026-03-08
 ---
 
 <!-- buttondown-editor-mode: plaintext -->Ahoy-hoy,
@@ -11,7 +12,7 @@ This special edition of Parental Leave updates (week 7) comes on the backside of
 
 So, the movie Toy Story really did a number on me. It is basically impossible for me to throw away any toy, broken or not, and not feel an overwhelming sense of guilt. Similar feelings arise when I see a toy that has been discarded. The week before our trip, Amelia spotted a little plush dinosaur on the side of the road during one of our walks around the block. I told her we should leave it, as I didn't want to make a habit of taking home garbage, but the wheels in my head were already turning. 
 
-The next day I returned to see if it was still there. I was briefly revealed when I could not locate it (in my mind, the child who dropped it had come back to collect it), but it was also garbage day, and a number of bins were set out on the street. Feeling slightly embarrassed, I opened the lid of the first trash can, and there it was, right on top. I took it home, cleaned it very thourouly, and showed Amelia the result. She suggested someone might be looking for it, and then this happened.
+The next day I returned to see if it was still there. I was briefly relieved when I could not locate it (in my mind, the child who dropped it had come back to collect it), but it was also garbage day, and a number of bins were set out on the street. Feeling slightly embarrassed, I opened the lid of the first trash can, and there it was, right on top. I took it home, cleaned it very thoroughly, and showed Amelia the result. She suggested someone might be looking for it, and then this happened.
 
 ![Amelia posting a found dinosaur poster.](https://cdn.aleksrudzitis.com/letters/2023-07-11/imgs/amelia-lost-dino.jpg)
 
@@ -33,7 +34,7 @@ Our first day, with a lazy start, was spent at Disneyland. This was Amelia's fir
 
 ![Amelia shouting at a parade.](https://cdn.aleksrudzitis.com/letters/2023-07-11/imgs/amelia-shouting-parade.jpg)
 
-We got in more rides than I anticipated. Our first (and worse line experience) was the iconic flying Dumbo ride, which we waited about 50 minutes for (and the ride only lasts like 2 minutes.) After that, we had some Lightning Lane reservations and things went a little more smoothly. 
+We got in more rides than I anticipated. Our first (and worst line experience) was the iconic flying Dumbo ride, which we waited about 50 minutes for (and the ride only lasts like 2 minutes.) After that, we had some Lightning Lane reservations and things went a little more smoothly. 
 
 Despite the crowds and chaos of it all, those Disney folks seem to know what they are doing. Food was easy to come by, and reasonably priced. Staff were extremely helpful. There were little Amelia-sized potties available, as well as a nursing and changing area for Jonny. 
 
