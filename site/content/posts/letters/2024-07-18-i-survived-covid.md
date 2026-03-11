@@ -1,6 +1,7 @@
 ---
 title: "I survived COVID and all I got was this blog post."
 buttondown_id: em_12edb2vm6j84tape0mr18bee78
+revised_on: 2026-03-10
 ---
 
 While COVID-19 has not ceased to be a thing in our world, for better or for worse, it does seem that we’ve largely settled into a kind of normalcy. And while our world doesn’t look like it did in 2019, I wanted to take some time to appreciate the contrast between the present and some of the strangeness of 2020. Because in retrospect it was all really weird and I don’t want to forget about it. 
@@ -108,7 +109,7 @@ We did the little dropper-watch-the-lines-appear test the same as everyone.
 Google was also kind enough to provide Yuling with a [Cue](https://cuehealth.com/covid-19-category), which certainly felt like it would be more accurate. 
 
 
-# Specially Occasions
+# Special Occasions
 
 I did attend my first and probably only Zoom wedding. The medium allowed the innovative experience of following a live stream as the couple tried to navigate their way to the court house. Normally you don’t get to see the juicy behind the scenes stuff. 
 
@@ -127,7 +128,7 @@ We briefly hired a nanny to look after Amelia at home. This worked for a couple 
 
 Grandma-care was supplemented by some valiant but ultimately failed attempts at participating in a co-op preschool program over Zoom. We would pick up activity kits made by a teacher and then do “activities” together over Zoom. Sometimes I would read a story to a bunch of parents with their toddlers wandering around in the background. A- for effort, but this didn’t work. 
 
-For a while, our primary source of respite from the isolation were walks. We settled on a routine of picking different Seattle neighborhoods and then just wondering about. No one else seemed to be doing this, so it felt properly socially distant. It was something to do. 
+For a while, our primary source of respite from the isolation were walks. We settled on a routine of picking different Seattle neighborhoods and then just wandering about. No one else seemed to be doing this, so it felt properly socially distant. It was something to do. 
 
 | ![Walking in a random neighborhood.](https://cdn.aleksrudzitis.com/letters/2024-07-18/imgs/walks.jpg)
 |:--:| 
@@ -142,6 +143,6 @@ There were two big transition points I remember: a better understanding that the
 
 Each of us crammed into line to get COVID vaccines when they first became available. I received my first dose from the Yakima fairgrounds. (A mass vaccination facility had been set up, but since they didn’t do it close to where a large part of the population actually lived, workers there ended up making posts on Facebook basically begging folks to cross the mountains for a vaccine if they wanted one.) The second dose I received through a mass clinic at Amazon’s meeting center. 
 
-Work started allowing visits with proof of vaccination. I remember the whole thing feeling a bit silly because the office assured us they were doing their best to keep us safe by sanitizing all surfaces, but then we’d all eat together in a crowded lunchroom with no masks. I’m pretty wiping down the arm rests each night wasn’t do much for anyone. 
+Work started allowing visits with proof of vaccination. I remember the whole thing feeling a bit silly because the office assured us they were doing their best to keep us safe by sanitizing all surfaces, but then we’d all eat together in a crowded lunchroom with no masks. I'm pretty sure wiping down the arm rests each night wasn’t do much for anyone. 
 
 And eventually we all got COVID (most likely of the Omicron variety). It was fine. Mostly I just remember bread tasting weird. 
