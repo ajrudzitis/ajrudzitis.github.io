@@ -14,7 +14,7 @@ This document tracks planned work for the website and related infrastructure.
   - Articles are not synced with Buttondown (unlike letters)
 
 ### Remove Legacy Links
-- [ ] Remove Tinyletter links from 7 old letter archives (2020-2021 HTML files)
+- [x] Remove Tinyletter links from 7 old letter archives (2020-2021 HTML files)
   - Files affected:
     - `2020-10-03-koan.html`
     - `2020-11-25-the-sum-of-our-parts.html`
@@ -23,6 +23,7 @@ This document tracks planned work for the website and related infrastructure.
     - `2021-05-29-the-fading-scent-of-lilacs.html`
     - `2021-06-13-this-old-house.html`
     - `2021-08-17-among-the-trees.html`
+  - **Done**: All tinyletter links removed during proofreading project
 
 ---
 
@@ -47,20 +48,12 @@ This document tracks planned work for the website and related infrastructure.
 
 ## Proofreading Project
 
-Review all 37 letters for grammatical errors, misspellings, and misplaced words. **Each batch requires approval before proceeding.**
+Review all letters and articles for grammatical errors, misspellings, and misplaced words.
 
-- [ ] Proofreading batch 1: Review first 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 2: Review next 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 3: Review next 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 4: Review next 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 5: Review next 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 6: Review next 3-5 letters for grammatical errors (requires approval)
-- [ ] Proofreading batch 7: Review remaining letters for grammatical errors (requires approval)
-
-### Sync Corrections
-- [ ] Sync proofread letter revisions to Buttondown for previously published letters
-  - Use `buttondown-cli update` to push revisions to published versions
-  - Only sync letters that have `buttondown_id` in frontmatter
+- [x] All 61 letters and 1 article proofread
+  - **Done**: See `PROOFREADING_CHECKLIST.md` for full details
+  - Corrections synced to Buttondown for all letters with `buttondown_id`
+  - Added `revised_on` frontmatter to files with corrections
 
 ---
 
@@ -161,4 +154,4 @@ Deploy TUI app to AWS with automated deployment pipeline.
 
 ---
 
-*Last updated: 2026-03-08*
+*Last updated: 2026-03-10*
