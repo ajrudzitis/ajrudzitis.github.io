@@ -1,6 +1,7 @@
 ---
 title: Amazing Children's Books
 buttondown_id: em_7ckn1abq2g89k955ga9bd9zbnr
+revised_on: 2026-03-08
 ---
 Happy New Year!
 
@@ -110,7 +111,7 @@ _Addy's Cup of Sugar_ is a sort of special-feature of his _Zen_ series of books.
 > 
 > - _They All Saw A Cat_
 
-Brendan Wenzel specializes in stories that show how a simple thing can look so differerent, depending on your perspective. In _They All Saw A Cat_, he shows us how different animals interpret the presence of a house cat based on the limitations of their senses and their view of the world. 
+Brendan Wenzel specializes in stories that show how a simple thing can look so different, depending on your perspective. In _They All Saw A Cat_, he shows us how different animals interpret the presence of a house cat based on the limitations of their senses and their view of the world. 
 
 In another one of his books, _A Stone Sat Still_ (which I have not yet read), Brendan shows how a simple stone changes with the passing of time and the seasons. 
 
