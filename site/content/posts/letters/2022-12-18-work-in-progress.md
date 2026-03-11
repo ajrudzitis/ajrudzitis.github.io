@@ -1,6 +1,7 @@
 ---
 title: Work in Progress
 buttondown_id: em_35xb3xa7c18b3bew5aaqsph5md
+revised_on: 2026-03-08
 ---
 Jonny’s happy place is the changing table next to his window. (At least, when he is with me, the parent unable to produce fresh milk.)
 
@@ -16,7 +17,7 @@ Looking out the window, it is both grey and green.
 
 The winter here is defined by darkness and grey skies. But the green of many kinds of trees, as well as the plentiful moss, stands guard against the encroaching monochrome. 
 
-And there is life. Though it retreats from the gardens and leafy trees, it’s presence can still be found in the scent of decaying leaves that fills the air outside. 
+And there is life. Though it retreats from the gardens and leafy trees, its presence can still be found in the scent of decaying leaves that fills the air outside. 
 
 ---
 
