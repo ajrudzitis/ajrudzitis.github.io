@@ -1,11 +1,12 @@
 ---
 title: The one where Aleks writes about nostalgia
 buttondown_id: em_5fza5zafk39n68rssmpavf6sed
+revised_on: 2026-03-08
 ---
 The one where Aleks writes about nostalgia
 ===
 
-I’ve been wanting to write this one for a while. The world of childens’ books, music, and television is full of all sorts of new exciting things, and for those of you who have not had a chance to dive into that world, I’d love to get into the new stuff in a new email. But for now, I really want to visit the old. Because a surprising amount of the stuff I remember from my childhood is still around (and popular). 
+I’ve been wanting to write this one for a while. The world of children's books, music, and television is full of all sorts of new exciting things, and for those of you who have not had a chance to dive into that world, I’d love to get into the new stuff in a new email. But for now, I really want to visit the old. Because a surprising amount of the stuff I remember from my childhood is still around (and popular). 
  
 Okay, so let’s get into it.  This risks getting real dark, so I’ll start with the bad and end with the good. 
 
@@ -51,7 +52,7 @@ That one also got an Emmy.
  
 Someone who was alive during the decade where these were made, please tell me what was going on. 
 
-The Excelleng
+The Excellent
 ---
 
 _Peter, Paul, and Mary_
@@ -79,7 +80,7 @@ Because the 3D animated one is just terrible:
 
 ![Old versus New](imgs/2022-05-20/gordon.jpg "Old versus New")
 
-Okay, maybe it isn’t _The Grinch Tortures People_ bad, but it lacks much of the charm of its predacessor.
+Okay, maybe it isn’t _The Grinch Tortures People_ bad, but it lacks much of the charm of its predecessor.
  
 One of the things I really appreciated about the original _Thomas_ is that the engines, despite being sentient, still operate like normal steam engines. They don’t move without their driver manipulating the controls. They rely on signalmen to set the switches to get to the right places. They need coal, water, oil, etc. to operate. They’re still machines. It imposes an interesting constraint on the story that keeps the writers from getting too lazy.[0]
  
@@ -94,4 +95,4 @@ Anyway, that’s all I have for now. In a follow up, I’d love to share some of
 ---
 
 
-[0] I think it’s actually an interesting metaphor for the human condition. Because, while the narrator describes what is going on mechanically with the trains (driver forgot to set the break, etc.), the trains often think they’re moving or acting of their own volition. That is, you have a completely mechanical entity, that obeys the laws of physics, but retroactively ascribes its actions to its own consciousness. Makes you think. 
+[0] I think it’s actually an interesting metaphor for the human condition. Because, while the narrator describes what is going on mechanically with the trains (driver forgot to set the brake, etc.), the trains often think they’re moving or acting of their own volition. That is, you have a completely mechanical entity, that obeys the laws of physics, but retroactively ascribes its actions to its own consciousness. Makes you think. 
