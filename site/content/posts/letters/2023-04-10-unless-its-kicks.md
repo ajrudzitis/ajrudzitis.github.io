@@ -1,6 +1,7 @@
 ---
 title: Unless It's Kicks
 buttondown_id: em_2m7h31swkf904a2g890j7q74nn
+revised_on: 2026-03-08
 ---
 There is a peach tree in our yard that has always looked a bit pathetic. The previous owners planted it in a spot which does not provide it the sun it needs, so it has always suffered. It looks like it has too few branches, and the few that exist reach desperately toward the bit of sun they can feel. Yuling and I annually discuss removing it, but it has never been a priority. 
 
@@ -29,7 +30,7 @@ Work for now is good. The changes in our economic fortunes and possibility of a 
 
 Yuling likewise survived a round of cuts at Google. 
 
-On the positive side, [Stripe recently raised a Series I](https://stripe.com/newsroom/news/stripe-series-i-employee-liquidity) to provide employees (including me) some liquidity for the equity they have accumulated. This was a bit unique as generally when private companies raise equity, it is to fund their continued operation or some growth. In this case, the funding was purely to provide an exit for current and past employees who wanted it, with no dilution of the current shares. "How much are you going to sell?" has been an almost daily topic of discussion in one-on-one discussions since this was announced. Tax season next year will be spicy as I'm sure many employees adjusted their tax witholdings incorrectly. 
+On the positive side, [Stripe recently raised a Series I](https://stripe.com/newsroom/news/stripe-series-i-employee-liquidity) to provide employees (including me) some liquidity for the equity they have accumulated. This was a bit unique as generally when private companies raise equity, it is to fund their continued operation or some growth. In this case, the funding was purely to provide an exit for current and past employees who wanted it, with no dilution of the current shares. "How much are you going to sell?" has been an almost daily topic of discussion in one-on-one discussions since this was announced. Tax season next year will be spicy as I'm sure many employees adjusted their tax withholdings incorrectly. 
 
 In terms of actual work, I'm hoping really soon to have some stuff I've been writing about what I've been working on approved for external publication. After that, I generally want to write more industry focused stuff along side my family updates. 
 
@@ -39,7 +40,7 @@ Otherwise, time for side projects is in very short supply. Amelia's sleep schedu
 
 In July, we'll be making the annual pilgrimage to [Sun Lakes Park Resort](http://www.sunlakesparkresort.com/). And then immediately after, we'll be heading to SoCal to visit a few folks we haven't seen in too long. A bold call on both accounts with two kids, but we'll see what happens. 
 
-We're also looking possibly a Whistler, B.C. trip in December.
+We're also looking at possibly a Whistler, B.C. trip in December.
 
 That's all for now. It was good catching up.
 
