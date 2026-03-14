@@ -1,0 +1,229 @@
+/* Autumn theme - for the favorite season */
+/* "Autumn is our favorite season. It's why Amelia's middle name is Autumn." */
+
+:root {
+    --bg-color: #fef9f3;
+    --text-color: #3d2914;
+    --link-color: #c44536;
+    --border-color: #d4a373;
+    --muted-color: #8b6914;
+    --maple-red: #c44536;
+    --pumpkin-orange: #e07a5f;
+    --golden-yellow: #dda15e;
+    --bark-brown: #5c4033;
+    --harvest-cream: #fefae0;
+}
+
+body {
+    font-family: "Bookman Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+/* Warm gradient like afternoon autumn light */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse at top right,
+            rgba(221, 161, 94, 0.08) 0%,
+            transparent 50%),
+        radial-gradient(ellipse at bottom left,
+            rgba(196, 69, 54, 0.05) 0%,
+            transparent 50%);
+    z-index: -1;
+}
+
+header {
+    border-bottom: 3px solid var(--golden-yellow);
+}
+
+nav a {
+    color: var(--bark-brown);
+    font-weight: 600;
+    position: relative;
+}
+
+nav a::after {
+    content: "🍂";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    opacity: 0;
+    font-size: 0.8em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+nav a:hover {
+    color: var(--maple-red);
+}
+
+article time {
+    color: var(--muted-color);
+    font-size: 0.95rem;
+    font-variant: small-caps;
+    letter-spacing: 0.05em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    background: linear-gradient(180deg, transparent 85%, var(--golden-yellow) 85%);
+    transition: background 0.2s ease;
+}
+
+a:hover {
+    background: linear-gradient(180deg, transparent 60%, var(--golden-yellow) 60%);
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--maple-red);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--bark-brown);
+    border-bottom: 2px solid var(--golden-yellow);
+    padding-bottom: 0.3rem;
+    margin-top: 2.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--pumpkin-orange);
+    font-style: italic;
+}
+
+table {
+    border: 2px solid var(--border-color);
+    background: var(--harvest-cream);
+}
+
+th, td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--golden-yellow);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+footer {
+    border-top: 3px solid var(--golden-yellow);
+    color: var(--muted-color);
+}
+
+footer a {
+    color: var(--bark-brown);
+    background: none;
+}
+
+footer a:hover {
+    color: var(--maple-red);
+}
+
+/* Cozy blockquotes */
+blockquote {
+    background: var(--harvest-cream);
+    border-left: 4px solid var(--pumpkin-orange);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: var(--bark-brown);
+    border-radius: 0 8px 8px 0;
+}
+
+blockquote::before {
+    content: """;
+    font-size: 3rem;
+    color: var(--golden-yellow);
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: -0.5rem;
+    font-family: Georgia, serif;
+}
+
+code {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    background: var(--harvest-cream);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    border: 1px solid var(--border-color);
+}
+
+pre {
+    background: var(--bark-brown);
+    color: var(--harvest-cream);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--golden-yellow);
+}
+
+pre code {
+    background: transparent;
+    color: inherit;
+    border: none;
+}
+
+/* Harvest list markers */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 1.8rem;
+}
+
+ul li::before {
+    content: "❋";
+    position: absolute;
+    left: 0;
+    color: var(--pumpkin-orange);
+}
+
+::selection {
+    background: var(--golden-yellow);
+    color: var(--text-color);
+}
+
+/* Falling leaf keyframes */
+@keyframes drift {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(10px) rotate(5deg); }
+}
+
+/* Subtle paper texture */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.02;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    z-index: 1000;
+}

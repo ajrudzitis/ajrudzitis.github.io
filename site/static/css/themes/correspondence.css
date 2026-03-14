@@ -1,0 +1,247 @@
+/* Correspondence theme - letter-writing aesthetic */
+/* For the Letters section and the tradition of personal correspondence */
+
+:root {
+    --bg-color: #f8f5f0;
+    --text-color: #2c2c2c;
+    --link-color: #1a4480;
+    --border-color: #c9c0b3;
+    --muted-color: #6b6b6b;
+    --ink-blue: #1a4480;
+    --ink-black: #1a1a1a;
+    --paper-cream: #fdfbf7;
+    --seal-red: #8b0000;
+    --pencil-gray: #4a4a4a;
+}
+
+body {
+    font-family: "Crimson Text", "Garamond", "Times New Roman", serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Aged paper effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background:
+        linear-gradient(to right,
+            rgba(139, 119, 101, 0.05) 0%,
+            transparent 5%,
+            transparent 95%,
+            rgba(139, 119, 101, 0.05) 100%);
+    z-index: -1;
+}
+
+header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+/* Elegant handwritten-style nav */
+nav a {
+    color: var(--ink-blue);
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: var(--seal-red);
+}
+
+article time {
+    color: var(--pencil-gray);
+    font-size: 0.9rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+/* Add "written on" before dates */
+article time::before {
+    content: "written ";
+    font-style: normal;
+    opacity: 0.7;
+}
+
+a {
+    color: var(--ink-blue);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: var(--seal-red);
+    text-decoration-style: solid;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink-black);
+    border-bottom: 2px double var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink-blue);
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    margin-top: 2.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--pencil-gray);
+}
+
+table {
+    border: 1px solid var(--border-color);
+    background: var(--paper-cream);
+}
+
+th, td {
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-color);
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+footer {
+    border-top: 1px solid var(--border-color);
+    color: var(--muted-color);
+    font-style: italic;
+}
+
+footer::before {
+    content: "~";
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--border-color);
+}
+
+footer a {
+    color: var(--ink-blue);
+}
+
+/* Letter-style blockquotes */
+blockquote {
+    background: var(--paper-cream);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem 2rem;
+    margin: 2rem 1rem;
+    font-style: italic;
+    position: relative;
+}
+
+blockquote::before {
+    content: "✉";
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: var(--bg-color);
+    padding: 0 8px;
+    color: var(--seal-red);
+}
+
+code {
+    font-family: "Courier Prime", "Courier New", monospace;
+    background: var(--paper-cream);
+    padding: 1px 5px;
+    border: 1px solid var(--border-color);
+    font-size: 0.85em;
+}
+
+pre {
+    background: var(--paper-cream);
+    color: var(--ink-black);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    font-family: "Courier Prime", "Courier New", monospace;
+}
+
+pre code {
+    background: transparent;
+    border: none;
+}
+
+/* Numbered letter-style lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0.5rem;
+    color: var(--muted-color);
+}
+
+ol {
+    list-style: none;
+    counter-reset: letter-counter;
+    padding-left: 0;
+}
+
+ol li {
+    counter-increment: letter-counter;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ol li::before {
+    content: counter(letter-counter, lower-roman) ".";
+    position: absolute;
+    left: 0;
+    color: var(--ink-blue);
+    font-style: italic;
+}
+
+::selection {
+    background: var(--ink-blue);
+    color: white;
+}
+
+/* Watermark effect */
+body::after {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+    opacity: 0.015;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50' y='55' text-anchor='middle' font-family='serif' font-size='80' fill='%231a4480'%3E✉%3C/text%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 999;
+}

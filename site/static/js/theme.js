@@ -2,7 +2,7 @@
 (function() {
     'use strict';
 
-    const THEMES = ['minimalist', 'terminal', 'brutalist', 'postmodern'];
+    const THEMES = ['minimalist', 'terminal', 'brutalist', 'postmodern', 'evergreen', 'autumn', 'correspondence', 'zen', 'workshop'];
     const STORAGE_KEY = 'site-theme';
 
     function getCurrentTheme() {

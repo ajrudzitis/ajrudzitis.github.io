@@ -168,6 +168,11 @@ The site supports multiple visual themes with keyboard-based switching.
 - `terminal` - CRT/hacker aesthetic, green on dark, monospace, glow effects
 - `brutalist` - 90s web, bold colors, Times New Roman, harsh borders
 - `postmodern` - MONA-inspired, irreverent typography, subtle rotations (default)
+- `evergreen` - Pacific Northwest forest vibes, cedar browns, fern greens, misty textures
+- `autumn` - Warm harvest colors, golden yellows, maple reds, cozy serif typography
+- `correspondence` - Letter-writing aesthetic, sepia tones, elegant serifs, ink blue accents
+- `zen` - Minimal and meditative, generous whitespace, subtle stone/sand palette
+- `workshop` - Maker/craftsman aesthetic, wood tones, blueprint elements, technical specs feel
 
 **Theme files:**
 ```
@@ -178,7 +183,12 @@ site/static/
 │       ├── minimalist.css
 │       ├── terminal.css
 │       ├── brutalist.css
-│       └── postmodern.css
+│       ├── postmodern.css
+│       ├── evergreen.css
+│       ├── autumn.css
+│       ├── correspondence.css
+│       ├── zen.css
+│       └── workshop.css
 └── js/
     ├── theme.js              # Theme switching (Ctrl+Shift+T)
     └── easter-eggs.js        # Hidden features
