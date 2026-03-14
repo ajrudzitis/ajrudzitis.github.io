@@ -3,6 +3,7 @@ public/
 _site/
 
 # Rust/Cargo
+target/
 static-site-generator/target/
 buttondown-cli/target/
 # Note: Cargo.lock should be committed for applications (not ignored)
