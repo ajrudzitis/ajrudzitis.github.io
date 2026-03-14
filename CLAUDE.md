@@ -158,3 +158,53 @@ category_name = "/path/:year-:month-:day"
 ```
 
 Permalink variables: `:year`, `:month`, `:day`, `:slug`
+
+### Theme System
+
+The site supports multiple visual themes with keyboard-based switching.
+
+**Available themes:**
+- `minimalist` - Clean, system fonts, white background
+- `terminal` - CRT/hacker aesthetic, green on dark, monospace, glow effects
+- `brutalist` - 90s web, bold colors, Times New Roman, harsh borders
+- `postmodern` - MONA-inspired, irreverent typography, subtle rotations (default)
+
+**Theme files:**
+```
+site/static/
+├── css/
+│   ├── base.css              # Shared structural styles
+│   └── themes/
+│       ├── minimalist.css
+│       ├── terminal.css
+│       ├── brutalist.css
+│       └── postmodern.css
+└── js/
+    ├── theme.js              # Theme switching (Ctrl+Shift+T)
+    └── easter-eggs.js        # Hidden features
+```
+
+**Configuration** (`site/config.toml`):
+```toml
+[theme]
+default = "postmodern"
+```
+
+**How it works:**
+1. Inline script in `<head>` checks localStorage for saved theme preference
+2. Falls back to `data-default-theme` attribute (from config)
+3. Dynamically writes the theme CSS `<link>` tag before page renders (prevents flash)
+4. `theme.js` handles keyboard shortcut and persistence
+
+### Easter Eggs
+
+Hidden interactive features in `site/static/js/easter-eggs.js`:
+
+1. **Konami Code** (↑↑↓↓←→←→BA): Displays a floating quote bubble that drifts across the screen
+2. **Footer clicks**: 7 clicks on the footer reveals a random quote
+3. **Console greeting**: Developer-facing messages
+4. **Idle prompt**: After 2 minutes of inactivity, a gentle "Take a breath" message appears
+
+Quotes are loaded from `site/static/quotes/quotes.txt` (one per line).
+
+All easter egg UI elements are styled to match the currently active theme

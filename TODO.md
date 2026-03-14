@@ -86,29 +86,41 @@ Build a network-accessible terminal interface for browsing letters.
 Iterate on website design with theme switching between retro and minimalist aesthetics. Inspired by post-modern art museums.
 
 ### Theme System
-- [ ] Design website style iteration: explore retro/nostalgic + minimalist themes
-  - Research post-modern art museum aesthetics
-  - Create design mockups for both themes
+- [x] Design website style iteration: explore retro/nostalgic + minimalist themes
+  - **Done**: Created 4 themes covering the aesthetic spectrum
+  - CSS architecture: `base.css` (structural) + `themes/*.css` (visual)
 
-- [ ] Implement theme switcher mechanism (retro vs minimalist modes)
-  - Persistent user preference (localStorage)
-  - Smooth transitions between themes
+- [x] Implement theme switcher mechanism (retro vs minimalist modes)
+  - **Done**: Keyboard shortcut `Ctrl+Shift+T` / `Cmd+Shift+T` cycles through themes
+  - Persistent user preference via localStorage
+  - Flash-free loading via inline script in `<head>`
+  - Toast notification shows current theme name
 
 ### Visual Themes
-- [ ] Develop retro/nostalgic aesthetic option with post-modern art influences
-  - Options: 90s web, terminal-inspired, brutalist, vintage computing
-  - Post-modern art museum influence
+- [x] Develop retro/nostalgic aesthetic option with post-modern art influences
+  - **Done**: Created 3 retro-inspired themes:
+    - `terminal` - CRT/hacker aesthetic (green on dark, monospace, glow effects, scanlines)
+    - `brutalist` - 90s web (bold colors, Times New Roman, harsh borders, GeoCities energy)
+    - `postmodern` - MONA-inspired (irreverent typography, subtle rotations, grain texture)
 
-- [ ] Develop minimalist refined aesthetic option with excellent typography
-  - Clean, sophisticated design
-  - Excellent spacing and readability
-  - Subtle details
+- [x] Develop minimalist refined aesthetic option with excellent typography
+  - **Done**: `minimalist` theme with system fonts, clean borders, subtle colors
 
 ### Interactive Elements
-- [ ] Add playful easter eggs and interactive JavaScript toys to website
-  - Hidden surprises
-  - Interactive experiments
-  - Fun discoveries for visitors
+- [x] Add playful easter eggs and interactive JavaScript toys to website
+  - **Done**: Implemented in `site/static/js/easter-eggs.js`:
+    - Konami code (↑↑↓↓←→←→BA) triggers floating quote bubble
+    - 7 footer clicks reveals random quote
+    - Console greeting for developers
+    - Idle meditation prompt after 2 minutes
+  - 48 whimsical quotes in `site/static/quotes/quotes.txt`
+  - All easter egg UI styled to match current theme
+
+### Future Enhancements
+- [ ] Add visible theme toggle button (optional, keyboard shortcut is primary)
+- [ ] Consider additional themes (e.g., `sepia`, `high-contrast`, `seasonal`)
+- [ ] Add more quotes to `quotes.txt`
+- [ ] Consider additional easter eggs (e.g., secret page, cursor trails)
 
 ---
 
@@ -150,8 +162,8 @@ Deploy TUI app to AWS with automated deployment pipeline.
 1. ~~**Buttondown metadata format**: Should we use `buttondown_url`, `buttondown_id`, or `published_to_buttondown: true` in frontmatter?~~ **Resolved**: Using `buttondown_id` in frontmatter
 2. **TUI network protocol**: SSH (secure, auth required) or telnet (simpler, fully public)?
 3. **AWS region/instance**: Preferred region and instance size for TUI deployment?
-4. **Theme switching UI**: Toggle button, keyboard shortcut, or both?
+4. ~~**Theme switching UI**: Toggle button, keyboard shortcut, or both?~~ **Resolved**: Keyboard shortcut only (`Ctrl+Shift+T`) for clean interface; themes are discoverable by power users
 
 ---
 
-*Last updated: 2026-03-10*
+*Last updated: 2026-03-14*

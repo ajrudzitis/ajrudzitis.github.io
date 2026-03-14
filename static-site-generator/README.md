@@ -9,6 +9,8 @@ A custom static site generator written in Rust, designed for aleksrudzitis.com.
 - Automatic URL generation matching Jekyll patterns
 - Hot-reload development server
 - Fast builds with Rust
+- Multi-theme system with keyboard switching
+- Easter eggs and hidden interactions
 
 ## Usage
 
@@ -85,6 +87,35 @@ Available context variables:
 - `site` - Site configuration
 - `page` - Current page/post content and metadata
 - `posts` - List of posts (in list templates)
+
+## Theming
+
+The site supports four visual themes, switchable via `Ctrl+Shift+T` (or `Cmd+Shift+T` on Mac):
+
+| Theme | Description |
+|-------|-------------|
+| `minimalist` | Clean, system fonts, white background |
+| `terminal` | CRT/hacker aesthetic, green monospace on dark |
+| `brutalist` | 90s web, bold colors, Times New Roman |
+| `postmodern` | MONA-inspired, playful typography (default) |
+
+Theme preference is saved in localStorage. Configure the default in `config.toml`:
+
+```toml
+[theme]
+default = "postmodern"
+```
+
+Theme CSS files are in `site/static/css/themes/`. The base structural styles (shared across all themes) are in `site/static/css/base.css`.
+
+## Easter Eggs
+
+Hidden features activated by:
+- **Konami Code** (↑↑↓↓←→←→BA): Floating quote bubble
+- **Footer clicks** (7x): Random quote reveal
+- **Idle** (2 min): Gentle mindfulness prompt
+
+Quotes are loaded from `site/static/quotes/quotes.txt`.
 
 ## License
 
