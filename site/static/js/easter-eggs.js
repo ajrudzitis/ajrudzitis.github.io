@@ -18,6 +18,47 @@
         }
     }
 
+    // Get current theme
+    function getCurrentTheme() {
+        return document.documentElement.dataset.theme || 'minimalist';
+    }
+
+    // Theme-aware styling for quote bubbles
+    function getQuoteBubbleStyle(theme) {
+        const styles = {
+            minimalist: {
+                background: 'rgba(255, 255, 255, 0.95)',
+                border: '2px solid #333',
+                color: '#333',
+                fontFamily: 'Georgia, serif',
+                shadow: '0 10px 40px rgba(0,0,0,0.2)'
+            },
+            terminal: {
+                background: 'rgba(10, 10, 15, 0.95)',
+                border: '1px solid #00ff41',
+                color: '#00ff41',
+                fontFamily: '"Courier New", monospace',
+                shadow: '0 0 20px rgba(0, 255, 65, 0.3), 0 0 40px rgba(0, 255, 65, 0.1)',
+                textShadow: '0 0 5px #00ff41'
+            },
+            brutalist: {
+                background: '#ffffff',
+                border: '4px solid #000000',
+                color: '#000000',
+                fontFamily: '"Times New Roman", serif',
+                shadow: '8px 8px 0 #ff00ff'
+            },
+            postmodern: {
+                background: 'rgba(245, 240, 230, 0.98)',
+                border: '2px solid #1a1a1a',
+                color: '#1a1a1a',
+                fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+                shadow: '0 10px 40px rgba(0,0,0,0.15)'
+            }
+        };
+        return styles[theme] || styles.minimalist;
+    }
+
     // Konami Code: up up down down left right left right b a
     const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
     let konamiIndex = 0;
@@ -37,9 +78,17 @@
         }
     });
 
+    // Get a random quote (Fisher-Yates inspired selection)
+    function getRandomQuote() {
+        const index = Math.floor(Math.random() * quotes.length);
+        return quotes[index];
+    }
+
     // Creative quote display - floating bubble that drifts across screen
     function showFloatingQuote() {
-        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const quote = getRandomQuote();
+        const theme = getCurrentTheme();
+        const style = getQuoteBubbleStyle(theme);
 
         const bubble = document.createElement('div');
         bubble.className = 'quote-bubble';
@@ -47,6 +96,7 @@
 
         // Random starting position on left edge
         const startY = Math.random() * 60 + 20; // 20-80% from top
+        const rotation = Math.random() * 6 - 3;
 
         bubble.style.cssText = `
             position: fixed;
@@ -54,19 +104,22 @@
             top: ${startY}%;
             max-width: 350px;
             padding: 20px 25px;
-            background: rgba(255, 255, 255, 0.95);
-            border: 2px solid #333;
-            border-radius: 20px;
-            font-family: Georgia, serif;
-            font-size: 18px;
-            font-style: italic;
+            background: ${style.background};
+            border: ${style.border};
+            border-radius: ${theme === 'brutalist' ? '0' : '20px'};
+            font-family: ${style.fontFamily};
+            font-size: ${theme === 'brutalist' ? '20px' : '18px'};
+            font-style: ${theme === 'terminal' ? 'normal' : 'italic'};
+            font-weight: ${theme === 'postmodern' ? '500' : 'normal'};
             line-height: 1.5;
-            color: #333;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            color: ${style.color};
+            box-shadow: ${style.shadow};
+            ${style.textShadow ? 'text-shadow: ' + style.textShadow + ';' : ''}
             z-index: 10001;
-            transform: rotate(${Math.random() * 6 - 3}deg);
+            transform: rotate(${rotation}deg);
             transition: none;
             cursor: pointer;
+            ${theme === 'terminal' ? 'text-transform: uppercase; letter-spacing: 1px;' : ''}
         `;
 
         document.body.appendChild(bubble);
@@ -127,7 +180,8 @@
     });
 
     function showFooterQuote() {
-        const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const quote = getRandomQuote();
+        const theme = getCurrentTheme();
         const footer = document.querySelector('footer');
 
         // Remove existing quote if any
@@ -137,12 +191,24 @@
         const quoteEl = document.createElement('p');
         quoteEl.id = 'footer-quote';
         quoteEl.textContent = `"${quote}"`;
+
+        // Theme-specific footer quote styling
+        let extraStyles = '';
+        if (theme === 'terminal') {
+            extraStyles = 'text-shadow: 0 0 5px #00ff41; text-transform: uppercase; letter-spacing: 1px;';
+        } else if (theme === 'brutalist') {
+            extraStyles = 'border: 2px solid #000; padding: 8px; background: #00ffff;';
+        } else if (theme === 'postmodern') {
+            extraStyles = 'font-weight: 500; transform: rotate(-0.5deg);';
+        }
+
         quoteEl.style.cssText = `
             font-style: italic;
             font-size: 0.9rem;
             margin-top: 1rem;
             opacity: 0;
             transition: opacity 0.5s ease;
+            ${extraStyles}
         `;
 
         footer.appendChild(quoteEl);
@@ -179,30 +245,44 @@
         if (idlePromptShown) return;
         idlePromptShown = true;
 
+        const theme = getCurrentTheme();
+        const style = getQuoteBubbleStyle(theme);
+
         const prompt = document.createElement('div');
         prompt.id = 'idle-prompt';
         prompt.innerHTML = `
-            <div style="font-size: 24px; margin-bottom: 8px;">~</div>
-            <div>Take a breath.</div>
+            <div style="font-size: 24px; margin-bottom: 8px;">${theme === 'terminal' ? '>' : '~'}</div>
+            <div>${theme === 'terminal' ? 'TAKE A BREATH_' : 'Take a breath.'}</div>
         `;
+
+        let extraStyles = '';
+        if (theme === 'terminal') {
+            extraStyles = 'text-shadow: 0 0 5px #00ff41; text-transform: uppercase; letter-spacing: 2px;';
+        } else if (theme === 'brutalist') {
+            extraStyles = 'transform: none;';
+        } else if (theme === 'postmodern') {
+            extraStyles = 'transform: translateX(-50%) rotate(-1deg);';
+        }
+
         prompt.style.cssText = `
             position: fixed;
             bottom: 30px;
             left: 50%;
             transform: translateX(-50%);
             padding: 15px 30px;
-            background: rgba(255, 255, 255, 0.95);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: Georgia, serif;
+            background: ${style.background};
+            border: ${style.border};
+            border-radius: ${theme === 'brutalist' ? '0' : '8px'};
+            font-family: ${style.fontFamily};
             font-size: 14px;
-            color: #666;
+            color: ${style.color};
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: ${style.shadow};
             z-index: 10000;
             opacity: 0;
             transition: opacity 0.8s ease;
             cursor: pointer;
+            ${extraStyles}
         `;
 
         document.body.appendChild(prompt);

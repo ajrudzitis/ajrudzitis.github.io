@@ -9,7 +9,7 @@ github = "ajrudzitis"
 linkedin = "aleksrudzitis"
 
 [theme]
-default = "minimalist"
+default = "postmodern"
 
 [permalinks]
 letters = "/letters/:year-:month-:day"
