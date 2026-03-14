@@ -8,6 +8,9 @@ twitter = "ajrudzitis"
 github = "ajrudzitis"
 linkedin = "aleksrudzitis"
 
+[theme]
+default = "minimalist"
+
 [permalinks]
 letters = "/letters/:year-:month-:day"
 articles = "/articles/:year-:month-:day-:slug"

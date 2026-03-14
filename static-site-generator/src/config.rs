@@ -14,7 +14,15 @@ pub struct Config {
     pub social: SocialLinks,
 
     #[serde(default)]
+    pub theme: ThemeConfig,
+
+    #[serde(default)]
     pub permalinks: HashMap<String, String>,
+}
+
+#[derive(Debug, Clone, Default, Serialize, Deserialize)]
+pub struct ThemeConfig {
+    pub default: Option<String>,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]

@@ -1,0 +1,149 @@
+/* Brutalist theme - 90s web aesthetic */
+
+:root {
+    --bg-color: #ffff00;
+    --text-color: #000000;
+    --link-color: #0000ff;
+    --link-visited: #800080;
+    --border-color: #000000;
+    --accent-red: #ff0000;
+    --accent-cyan: #00ffff;
+    --header-bg: #ff00ff;
+}
+
+body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    font-size: 18px;
+}
+
+header {
+    border-bottom: 4px solid var(--border-color);
+    background: var(--header-bg);
+    margin: -20px -20px 2rem -20px;
+    padding: 20px;
+}
+
+nav a {
+    color: var(--link-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid var(--border-color);
+    padding: 4px 8px;
+    background: var(--accent-cyan);
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+nav a:hover {
+    background: var(--accent-red);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+article time {
+    color: var(--text-color);
+    font-weight: bold;
+    background: #ffffff;
+    padding: 2px 6px;
+    border: 1px solid var(--border-color);
+}
+
+a {
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+a:visited {
+    color: var(--link-visited);
+}
+
+a:hover {
+    background: var(--link-color);
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Impact", "Arial Black", sans-serif;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 0.25rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: var(--accent-red);
+    color: #ffffff;
+    padding: 10px;
+    margin: 0 -20px 1rem -20px;
+}
+
+table {
+    border: 3px solid var(--border-color);
+}
+
+th, td {
+    border: 2px solid var(--border-color);
+}
+
+th {
+    background-color: var(--accent-cyan);
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: #ffffff;
+}
+
+footer {
+    border-top: 4px solid var(--border-color);
+    background: var(--header-bg);
+    margin: 3rem -20px -20px -20px;
+    padding: 20px;
+}
+
+footer a {
+    color: var(--link-color);
+    border: 2px solid var(--border-color);
+    padding: 2px 6px;
+    background: #ffffff;
+}
+
+/* Add some GeoCities flair */
+ul {
+    list-style-type: square;
+}
+
+blockquote {
+    border-left: 5px solid var(--accent-red);
+    background: #ffffff;
+    padding: 10px;
+    margin: 1rem 0;
+    font-style: italic;
+}
+
+code, pre {
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+    padding: 2px 6px;
+    font-family: "Courier New", monospace;
+}
+
+pre {
+    padding: 10px;
+    overflow-x: auto;
+}
+
+/* "Under construction" energy */
+hr {
+    border: none;
+    border-top: 4px dashed var(--border-color);
+    margin: 2rem 0;
+}
+
+/* Selection */
+::selection {
+    background: var(--accent-red);
+    color: #ffffff;
+}

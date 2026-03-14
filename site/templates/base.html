@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-default-theme="{{ site.theme.default | default(value='minimalist') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ site.title }}{% endblock %}</title>
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Inline theme initialization to prevent flash -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('site-theme') ||
+                        document.documentElement.dataset.defaultTheme ||
+                        'minimalist';
+            document.documentElement.dataset.theme = theme;
+            document.write('<link rel="stylesheet" href="/css/themes/' + theme + '.css" id="theme-css">');
+        })();
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="/css/themes/{{ site.theme.default | default(value='minimalist') }}.css" id="theme-css">
+    </noscript>
+
+    <link rel="stylesheet" href="/css/base.css">
     {% block extra_head %}{% endblock %}
 </head>
 <body>
@@ -31,5 +46,8 @@
             {% if site.social.twitter %}<a href="https://twitter.com/{{ site.social.twitter }}">Twitter</a>{% endif %}
         </p>
     </footer>
+
+    <script src="/js/theme.js"></script>
+    <script src="/js/easter-eggs.js"></script>
 </body>
 </html>
