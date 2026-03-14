@@ -17,6 +17,8 @@ This repository contains both the static site generator and the content for ajru
 - **Tera templating** - Powerful template engine with inheritance and partials
 - **Development server** - Hot-reload for rapid iteration during development
 - **Data files** - Load JSON/CSV data files for use in templates
+- **Multiple themes** - 9 visual themes with keyboard switching (`Ctrl+Shift+T`)
+- **Easter eggs** - Hidden surprises including a terminal mode (`Ctrl+Shift+X`)
 
 ## Quick Start
 

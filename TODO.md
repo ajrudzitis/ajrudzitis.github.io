@@ -59,20 +59,51 @@ Review all letters and articles for grammatical errors, misspellings, and mispla
 
 ## Terminal/TUI Version
 
-Build a network-accessible terminal interface for browsing letters.
+Build a terminal interface for browsing letters, accessible via both web (easter egg) and SSH.
+
+### Architecture Overview
+
+The terminal app will be a single Rust application compiled to two targets:
+1. **WASM** - Runs in browser via the terminal easter egg (Ctrl+Shift+X)
+2. **Native** - Runs on server, exposed via SSH
+
+This allows the same TUI codebase to power both experiences.
+
+### Browser Terminal (WASM)
+- [x] Create terminal easter egg infrastructure
+  - **Done**: `site/static/js/terminal-egg.js` provides xterm.js terminal overlay
+  - Triggered by Ctrl+Shift+X, full-screen blue terminal aesthetic
+  - Currently shows random quotes; ready to connect to WASM backend
+
+- [ ] Compile TUI app to WASM
+  - Use `wasm-bindgen` or `wasm-pack` to compile Rust TUI to WebAssembly
+  - Create JS glue code to bridge xterm.js input/output to WASM module
+  - The `processCommand()` function in `terminal-egg.js` is the integration point
+
+- [ ] Integration points in `terminal-egg.js`:
+  - Replace `processCommand(input)` with calls to WASM module
+  - WASM module should expose: `init()`, `process_input(string)`, `get_output() -> string`
+  - Handle async rendering (WASM -> terminal output)
 
 ### Core TUI Application
-- [ ] Design TUI/terminal app architecture (network-accessible, letter browsing)
+- [ ] Design TUI/terminal app architecture
   - Browse all letters with arrow key navigation
-  - Read letters in terminal
-  - Network accessible (SSH or telnet)
+  - Read letters in terminal with scrolling
+  - Search functionality
+  - Technology: Ratatui (Rust) for TUI rendering
 
 - [ ] Implement TUI letter browser with navigation and reading interface
-  - Technology options: Ratatui (Rust), Bubble Tea (Go), or similar
-  - Clean reading experience in terminal
+  - Abstract I/O layer to support both native terminal and xterm.js
+  - Clean reading experience with word wrap and scrolling
 
-- [ ] Implement TUI network server (SSH or telnet access)
-  - Decision needed: SSH (secure, requires auth) vs telnet (simple, public)
+- [ ] Build content loading for TUI
+  - Load letter content (can be embedded at compile time or fetched)
+  - Parse markdown to terminal-friendly format
+
+### SSH Server (Native)
+- [ ] Implement SSH server wrapper for TUI app
+  - Use `russh` or similar for SSH protocol
+  - Each connection spawns TUI instance
   - Should support multiple concurrent connections
 
 - [ ] Test TUI app locally and gather feedback
@@ -115,6 +146,13 @@ Iterate on website design with theme switching between retro and minimalist aest
     - Idle meditation prompt after 2 minutes
   - 48 whimsical quotes in `site/static/quotes/quotes.txt`
   - All easter egg UI styled to match current theme
+
+- [x] Add terminal easter egg (Ctrl+Shift+X)
+  - **Done**: Implemented in `site/static/js/terminal-egg.js`:
+    - Full-screen blue terminal overlay using xterm.js
+    - Press Enter for random quotes, type `help` for commands
+    - ESC or `exit` to close
+  - Foundation for future WASM-based terminal app (see Terminal/TUI Version section)
 
 ### Future Enhancements
 - [ ] Add visible theme toggle button (optional, keyboard shortcut is primary)

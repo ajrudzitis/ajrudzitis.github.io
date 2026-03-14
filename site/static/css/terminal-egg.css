@@ -1,0 +1,63 @@
+/* Terminal Easter Egg - Blue Screen Terminal */
+
+#terminal-egg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000aa;
+    z-index: 99999;
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#terminal-egg-overlay.active {
+    display: flex;
+}
+
+#terminal-egg-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Override xterm.js styles for blue screen aesthetic */
+#terminal-egg-container .xterm {
+    height: 100%;
+}
+
+#terminal-egg-container .xterm-viewport {
+    background: #0000aa !important;
+}
+
+#terminal-egg-container .xterm-screen {
+    background: #0000aa !important;
+}
+
+/* Terminal text styling */
+#terminal-egg-container .xterm-rows {
+    color: #ffffff !important;
+}
+
+/* Cursor styling */
+#terminal-egg-container .xterm-cursor-layer {
+    color: #ffffff !important;
+}
+
+/* Help text at bottom */
+#terminal-egg-help {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    text-align: center;
+    pointer-events: none;
+}

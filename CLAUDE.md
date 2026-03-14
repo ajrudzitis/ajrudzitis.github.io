@@ -191,7 +191,8 @@ site/static/
 │       └── workshop.css
 └── js/
     ├── theme.js              # Theme switching (Ctrl+Shift+T)
-    └── easter-eggs.js        # Hidden features
+    ├── easter-eggs.js        # Hidden features (Konami code, etc.)
+    └── terminal-egg.js       # Terminal easter egg (Ctrl+Shift+X)
 ```
 
 **Configuration** (`site/config.toml`):
@@ -217,4 +218,37 @@ Hidden interactive features in `site/static/js/easter-eggs.js`:
 
 Quotes are loaded from `site/static/quotes/quotes.txt` (one per line).
 
-All easter egg UI elements are styled to match the currently active theme
+All easter egg UI elements are styled to match the currently active theme.
+
+### Terminal Easter Egg
+
+A full-screen terminal overlay triggered by `Ctrl+Shift+X`, implemented in `site/static/js/terminal-egg.js`.
+
+**Features:**
+- Blue screen terminal aesthetic using xterm.js (loaded from CDN on first use)
+- Press Enter for random quotes, type `help` for commands
+- `exit` command or ESC key to close
+- `clear` command to clear screen
+
+**Architecture:**
+- `terminal-egg.css` - Styling for the blue screen overlay
+- `terminal-egg.js` - Terminal logic, xterm.js initialization, command handling
+- xterm.js loaded dynamically from jsDelivr CDN
+
+**Key functions in `terminal-egg.js`:**
+- `showTerminal()` / `hideTerminal()` / `toggleTerminal()` - Control visibility
+- `processCommand(input)` - Handle user input (integration point for future WASM backend)
+- `loadXterm()` - Dynamic loading of xterm.js library
+
+**Future WASM integration:**
+This terminal is designed to eventually connect to a WASM-compiled TUI application. The `processCommand()` function is the integration point - it can be replaced with calls to a WASM module that handles the actual terminal application logic. See `TODO.md` for detailed implementation plans.
+
+**Exposed API:**
+```javascript
+window.terminalEgg = {
+    show: showTerminal,
+    hide: hideTerminal,
+    toggle: toggleTerminal,
+    isActive: () => isActive
+};
+```
