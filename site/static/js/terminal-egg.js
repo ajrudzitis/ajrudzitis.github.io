@@ -56,7 +56,7 @@
         terminal = new Terminal({
             cursorBlink: true,
             cursorStyle: 'block',
-            fontFamily: '"Courier New", monospace',
+            fontFamily: '"B612 Mono", monospace',
             fontSize: 16,
             lineHeight: 1.2,
             theme: {
@@ -279,7 +279,13 @@
                 return;
             }
 
-            // Load CSS
+            // Load B612 Mono font (designed for aircraft cockpit displays)
+            const fontLink = document.createElement('link');
+            fontLink.rel = 'stylesheet';
+            fontLink.href = 'https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap';
+            document.head.appendChild(fontLink);
+
+            // Load xterm CSS
             const link = document.createElement('link');
             link.rel = 'stylesheet';
             link.href = 'https://cdn.jsdelivr.net/npm/xterm@5.3.0/css/xterm.css';
