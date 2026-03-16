@@ -77,11 +77,29 @@
         }, 1500);
     }
 
-    // Keyboard shortcut: Ctrl+Shift+T (or Cmd+Shift+T on Mac)
+    // Secret sequence: type "theme" to cycle themes
+    const themeSequence = ['t', 'h', 'e', 'm', 'e'];
+    let themeIndex = 0;
+    let themeTimeout;
+
     document.addEventListener('keydown', function(e) {
-        if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'T') {
-            e.preventDefault();
-            cycleTheme();
+        // Ignore if user is typing in an input field
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+            return;
+        }
+
+        // Reset sequence after 2 seconds of no input
+        clearTimeout(themeTimeout);
+        themeTimeout = setTimeout(() => { themeIndex = 0; }, 2000);
+
+        if (e.key.toLowerCase() === themeSequence[themeIndex]) {
+            themeIndex++;
+            if (themeIndex === themeSequence.length) {
+                themeIndex = 0;
+                cycleTheme();
+            }
+        } else {
+            themeIndex = 0;
         }
     });
 
@@ -99,4 +117,7 @@
         cycle: cycleTheme,
         themes: THEMES
     };
+
+    // Console hint
+    console.log('%c🎨 Type "theme" to cycle through visual styles', 'color: #6366f1; font-weight: bold;');
 })();

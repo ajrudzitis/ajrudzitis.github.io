@@ -1,5 +1,5 @@
 // Terminal Easter Egg - Blue Screen Terminal
-// Triggered by Ctrl+Shift+X
+// Triggered by typing "term"
 // Future: Can connect to SSH backend for full terminal experience
 
 (function() {
@@ -42,7 +42,7 @@
         overlay.id = 'terminal-egg-overlay';
         overlay.innerHTML = `
             <div id="terminal-egg-container"></div>
-            <div id="terminal-egg-help">Press ESC or type 'exit' to return | Ctrl+Shift+X to toggle</div>
+            <div id="terminal-egg-help">Press ESC or type 'exit' to return</div>
         `;
         document.body.appendChild(overlay);
     }
@@ -242,20 +242,39 @@
         }
     }
 
-    // Keyboard shortcut: Ctrl+Shift+X
-    document.addEventListener('keydown', function(e) {
-        // Toggle terminal
-        if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'X') {
-            e.preventDefault();
-            toggleTerminal();
-            return;
-        }
+    // Secret sequence: type "term" to toggle terminal
+    const termSequence = ['t', 'e', 'r', 'm'];
+    let termIndex = 0;
+    let termTimeout;
 
-        // Escape to close
+    document.addEventListener('keydown', function(e) {
+        // Escape to close (always works)
         if (e.key === 'Escape' && isActive) {
             e.preventDefault();
             hideTerminal();
             return;
+        }
+
+        // Don't detect sequence when terminal is active (user is typing commands)
+        if (isActive) return;
+
+        // Ignore if user is typing in an input field
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.isContentEditable) {
+            return;
+        }
+
+        // Reset sequence after 2 seconds of no input
+        clearTimeout(termTimeout);
+        termTimeout = setTimeout(() => { termIndex = 0; }, 2000);
+
+        if (e.key.toLowerCase() === termSequence[termIndex]) {
+            termIndex++;
+            if (termIndex === termSequence.length) {
+                termIndex = 0;
+                toggleTerminal();
+            }
+        } else {
+            termIndex = 0;
         }
     });
 
@@ -309,6 +328,6 @@
     };
 
     // Console hint
-    console.log('%c\ud83d\udcbb Terminal mode available: Ctrl+Shift+X', 'color: #0000aa; font-weight: bold;');
+    console.log('%c💻 Type "term" to enter terminal mode', 'color: #0000aa; font-weight: bold;');
 
 })();

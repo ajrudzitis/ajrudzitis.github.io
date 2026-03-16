@@ -190,9 +190,9 @@ site/static/
 │       ├── zen.css
 │       └── workshop.css
 └── js/
-    ├── theme.js              # Theme switching (Ctrl+Shift+T)
+    ├── theme.js              # Theme switching (type "theme")
     ├── easter-eggs.js        # Hidden features (Konami code, etc.)
-    └── terminal-egg.js       # Terminal easter egg (Ctrl+Shift+X)
+    └── terminal-egg.js       # Terminal easter egg (type "term")
 ```
 
 **Configuration** (`site/config.toml`):
@@ -222,7 +222,7 @@ All easter egg UI elements are styled to match the currently active theme.
 
 ### Terminal Easter Egg
 
-A full-screen terminal overlay triggered by `Ctrl+Shift+X`, implemented in `site/static/js/terminal-egg.js`.
+A full-screen terminal overlay triggered by typing `term`, implemented in `site/static/js/terminal-egg.js`.
 
 **Features:**
 - Blue screen terminal aesthetic using xterm.js (loaded from CDN on first use)
