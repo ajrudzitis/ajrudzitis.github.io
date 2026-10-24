@@ -2,6 +2,9 @@
 title: The Best Vacation Ever
 ---
 
+*I wrote this letter back in July and then never got around to pushing send because a bunch of other stuff happened. I
+still think it is worth sending, so pretend you're reading this at the peak of summer. Cheers!*
+
 Hello Friends and Family,
 
 It's been a while. There is lots to get through, but I've found a moment of peace on a flight from Copenhagen to Seattle
@@ -35,6 +38,8 @@ Frej's uncle and aunt own the most beautiful home on the most beautiful street i
 postcards in the city. The actual home is behind a central courtyard, shared with several other homes. The family
 members were spending their summer in a different part of Sweden and generously lent us their home in Lund for our stay. 
 
+![The Most Beautiful House in Lund](https://cdn.aleksrudzitis.com/letters/2026-10-24/imgs/house_in_lund.jpg "The Most Beautiful House in Lund")
+
 Jing and Frej met us at the home a bit later. They had two little ones of their own, and the children
 quickly descended on a cherry tree in the courtyard to collect the ripe fruit. 
 
@@ -54,7 +59,7 @@ In the evenings, Frej and Yuling would cook. I was occasionally trusted with a m
 scrubbing potatoes (and I would do what I could with the cleaning).
 
 Frej is a musician (who only moonlights as a computer programmer), and we were never far from a piano and his music.
-(See https://www.youtube.com/@frejberglind for a taste.) 
+(See [https://www.youtube.com/@frejberglind](https://www.youtube.com/@frejberglind) for a taste.) 
 
 ## Visiting Malmö
 
@@ -70,7 +75,7 @@ We finished the day at a local playground before taking the train back to Lund.
 
 On another excursion we visited Frej's parents in the country village. The simple act of sharing a meal with our
 generous hosts was the purest joy I had known for some time. The village was about 30 minutes away by bus, but we got
-off several stops early to walk the rest of the way on a forest trail — a stretch of the Skåneleden, the thousand-plus
+off several stops early to walk the rest of the way on a forest trail, a stretch of the Skåneleden, the thousand-plus
 kilometer trail network that runs all through Skåne, marked the whole way with orange blazes.
 
 The kids played in the little orchard, Amelia trying to catch butterflies with an improvised net. The adults discussed
