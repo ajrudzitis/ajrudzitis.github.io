@@ -14,7 +14,8 @@ impl TemplateEngine {
             .to_string_lossy()
             .to_string();
 
-        let mut tera = Tera::new(&pattern)
+        let mut tera = Tera::new();
+        tera.load_from_glob(&pattern)
             .with_context(|| format!("Failed to load templates from {}", pattern))?;
 
         // Add custom filters if needed
